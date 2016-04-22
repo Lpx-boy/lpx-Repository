@@ -1,0 +1,291 @@
+﻿<!doctype html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jQueryRotate.2.2.js" type="text/javascript"></script>
+<script src="js/jquery.zclip.min.js?skin=default"></script>
+<script src="js/swfobject.js?skin=default"></script>
+<script src="js/layer.js"></script>
+<link rel="stylesheet" type="text/css" href="css/lottery-but.css">
+<link id="layui_layer_skinlayercss" rel="stylesheet" href="css/layer.css">
+<meta charset="utf-8">
+<title>中秋活动专题</title>
+</head>
+<body>
+<!--上-->
+<div class="exe_top">
+	<div class="exe_top_banner"><img src="images/min_banner.png" width="100%"></div>
+    <div class="exe_top_title">
+    	<p class="exe_title_center">
+        	<i class="exe_center_left"></i>
+            <i class="exe_center_right"></i>
+        </p>
+    </div>
+    <div class="exe_ima_bg">
+    	<div class="exe_dra_exe">
+        	<img src="images/dra_exe_bg.png" width="100%">
+            <div class="exe_dra_id">
+            	<!--转盘-指针-->
+            	<div class="lottery-but" id="lotteryBtn" style="transform: rotate(0deg);"><img src="images/lottery-btn.png" width="240" height="240"></div>
+                <div class="lottery-txt">剩余<span id="number">0</span>次|分享赢抽奖机会</div>
+                <!--人数中奖-->
+                <h4 class="exe_num_win">已有<span>11613</span>人中奖</h4>
+                <a href="#" class="exe_My_prize">我的奖品</a>
+                <!--获奖列表-->
+                <div class="exe_bear_li">
+                	<h4>
+                    	<span>手机号</span>
+                        <span>用户地区</span>
+                        <span>获得奖品</span>
+                    </h4>
+                    <div class="exe_bear_content">
+                    	<ul class="exe_bear_con_box">
+                        	<li class="exe_bear_con_li">
+                            	<dl>
+                                	<dd>135****4634</dd>
+                                    <dd>东莞市南城区鸿福路</dd>
+                                    <dd class="exe_last_dd">云南长线3日游</dd>
+                                </dl>
+                            </li>
+                            <li class="exe_bear_con_li">
+                            	<dl>
+                                	<dd>135****4634</dd>
+                                    <dd>东莞市南城区鸿福路</dd>
+                                    <dd class="exe_last_dd">云南长线3日游</dd>
+                                </dl>
+                            </li>
+                            <li class="exe_bear_con_li">
+                            	<dl>
+                                	<dd>135****4634</dd>
+                                    <dd>东莞市南城区鸿福路</dd>
+                                    <dd class="exe_last_dd">云南长线3日游</dd>
+                                </dl>
+                            </li>
+                            <li class="exe_bear_con_li">
+                            	<dl>
+                                	<dd>135****4634</dd>
+                                    <dd>东莞市南城区鸿福路</dd>
+                                    <dd class="exe_last_dd">云南长线3日游</dd>
+                                </dl>
+                            </li>
+                            <li class="exe_bear_con_li">
+                            	<dl>
+                                	<dd>135****4634</dd>
+                                    <dd>东莞市南城区鸿福路</dd>
+                                    <dd class="exe_last_dd">云南长线3日游</dd>
+                                </dl>
+                            </li>
+                            <li class="exe_bear_con_li">
+                            	<dl>
+                                	<dd>135****4634</dd>
+                                    <dd>东莞市南城区鸿福路</dd>
+                                    <dd class="exe_last_dd">云南长线3日游</dd>
+                                </dl>
+                            </li>
+                            <li class="exe_bear_con_li">
+                            	<dl>
+                                	<dd>135****4634</dd>
+                                    <dd>东莞市南城区鸿福路</dd>
+                                    <dd class="exe_last_dd">云南长线3日游</dd>
+                                </dl>
+                            </li>
+                            <li class="exe_bear_con_li">
+                            	<dl>
+                                	<dd>135****4634</dd>
+                                    <dd>东莞市南城区鸿福路</dd>
+                                    <dd class="exe_last_dd">云南长线3日游</dd>
+                                </dl>
+                            </li>
+                            <li class="exe_bear_con_li">
+                            	<dl>
+                                	<dd>135****4634</dd>
+                                    <dd>东莞市南城区鸿福路</dd>
+                                    <dd class="exe_last_dd">云南长线3日游</dd>
+                                </dl>
+                            </li>
+                            <li class="exe_bear_con_li">
+                            	<dl>
+                                	<dd>135****4634</dd>
+                                    <dd>东莞市南城区鸿福路</dd>
+                                    <dd class="exe_last_dd">云南长线3日游</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+<script>
+function dd(){
+	$(".exe_bear_con_box").animate({top:-32},1500,
+function(){
+	$(".exe_bear_con_box").css({top:0});
+	$(".exe_bear_con_li:first").insertAfter(".exe_bear_con_li:last");
+}
+		  					 );
+}
+var db=setInterval(dd,2000);
+$(".exe_bear_content").mouseover(function(){
+	clearInterval(db);
+}
+			 ).mouseout(function(){
+	db=setInterval(dd,2000);			 
+}
+					   );
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--下-->
+<div class="exe_bottom">
+	<!--bottom_01-->
+		<ul class="exe_bottom_01">
+        	<li class="exe_b_01_t">
+            	<span class="exe_left_01"></span>
+                <span class="exe_right_01"><a href="#">立即投资</a></span>
+            </li>
+            <li class="exe_b_02_t"></li>
+            <li class="exe_b_03_t">
+            	<p>
+                	活动规则：<br>
+1.活动期间注册并参与投标成功的用户，奖励首次投标金额的1%，奖励最晚于投标次日返送到“我的会员中心—账户余额”，此金额可直接提现或用于投资，任意标的都可以享有，体验标除外。<br>
+2.活动最终解释权都归东莞市快捷资产管理有限公司所有。
+                </p>
+            </li>
+        </ul>
+    <!--bottom_02-->
+    <ul class="exe_bottom_02">
+    		<li class="exe_b_04_t">
+            	<span class="exe_left_04"></span>
+                <span class="exe_right_04"><a href="#">立即投资</a></span>
+            </li>
+            <li class="exe_b_05_t"></li>
+            <li class="exe_b_06_t">
+            	<p>
+                	活动规则：<br>
+1.新老客户均可以参加，只要在平台有首投过，从第二笔投资开始活动期间的续投标都可以享受累加续投礼<br>
+2.投任意标金额均可以累加核算，标的客户任意选择不受影响，除开首投金额，活动期间续投金额累计满1000，还可获得一次免费抽奖苹果6s的机会；<br>
+3.返现金额最终在活动结束10月25日后进行核算，最晚于10月28前返到对应获得奖励的账户，可以到”我的会员中心—账户余额”中进行查看，同时也会收到短信通知，如有疑问请咨询平台客服。<br>
+4.活动最终解释权都归东莞市快捷资产管理有限公司所有。
+                </p>
+            </li>
+    </ul>
+</div>
+<script type="text/javascript">
+    var islock = false;
+    //加载登录框
+    function login_box(){
+        layer.open({
+            type: 2,
+            title: '用户登录',
+            shadeClose: true,
+            shade: 0.8,
+            area: ['500px', '450px'],
+            content: "/login-login_box.html"
+        });
+    }
+    var timeOut = function(){  //超时函数
+        $("#lotteryBtn").rotate({
+            angle:0,
+            duration: 10000,
+            animateTo: 2160, //这里是设置请求超时后返回的角度，所以应该还是回到最原始的位置，2160是因为我要让它转6圈，就是360*6得来的
+            callback:function(){
+                alert('亲！没有中奖哦！！')
+            }
+        });
+    };
+    var rotateFunc = function(awards, angle, text, level, number){  //awards:奖项，angle:奖项对应的角度
+        $('#lotteryBtn').stopRotate();
+        $("#lotteryBtn").rotate({
+            angle:0,
+            duration: 5000,
+            animateTo: angle + 1440, //angle是图片上各奖项对应的角度，1440是我要让指针旋转4圈。所以最后的结束的角度就是这样子^^
+            callback:function(){
+                $('#number').html(number);
+                alert("恭喜您中到" + level + "等奖,奖品为：" + text);
+                setTimeout(function(){
+                    islock = false;
+                }, 100)
+            }
+        });
+    };
+
+    $("#lotteryBtn").rotate({
+        bind:{
+            click: function(){
+                if(!islock){
+                    islock = true;
+                    $.post('/award-lottery.html', {}, function(data){
+                        if(data.result){
+                            $('#number').html(parseInt( $('#number').html()) -1);
+                            $('#tip-number').css({
+                                opacity:1,
+                                left: '269px',
+                                bottom:'45px'
+                            }).show().animate({
+                                left: '500px',
+                                bottom: '100px',
+                                opacity: '0'
+                            }, 1000);
+                            var angle = 0;
+                            switch (parseInt(data.level)){
+                                case 1:
+                                    angle = 120;
+                                    break;
+                                case 2:
+                                    angle = 60;
+                                    break;
+                                case 3:
+                                    angle = 180;
+                                    break;
+                                case 4:
+                                    angle = 300;
+                                    break;
+                                case 5:
+                                    angle = 0;
+                                    break;
+                                default:
+                                    angle = 240;
+                                    break;
+                            }
+                            rotateFunc(data.level, angle, data.msg, data.level, data.number);
+                        }else{
+                            switch (data.id){
+                                case 2:
+                                    login_box();
+                                    break;
+                                default :
+                                    setTimeout(function(){
+                                        islock = false;
+                                    }, 100);
+                                    alert(data.errMsg);
+                                    break;
+                            }
+                        }
+                    }, 'json')
+                }
+            }
+        }
+
+    });
+
+    var timeout;
+    function slide(){
+        $('#award-list').animate({
+            marginTop: '-25px'
+        }, 1000, function(){
+            $('#award-list li:last').after( $('#award-list li:first'));
+            $('#award-list').css({marginTop: '0px'});
+        });
+    }
+
+    function loadingSlide(){
+        timeout = window.setInterval(function(){
+            slide();
+        }, 3000);
+    }
+    loadingSlide();
+
+</script>
+</body>
+</html>

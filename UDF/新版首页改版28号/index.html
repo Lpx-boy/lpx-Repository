@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/new_file.js"></script>
+		<script src="js/new_file_1.js"></script>
+		<meta charset="utf-8">
+		<title>新版首页改版28号</title>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="header_main">
+				<div class="header_left">
+					<span>客服热线：4000-233188</span>
+					<a title="微信登录" class="header_weixin" name="weixin">
+						<i></i>
+						<img src="images/header_weixin_pic.jpg">
+					</a>
+					<a title="新浪微博" class="header_xinlang"></a>
+<script>
+$('a[name=weixin]').hover(function() {
+    $(this).find('img').stop(true,true).toggle("fast");
+    $(".header_left .header_weixin i").css("background-position","-19px top");
+}, function() {
+    $(this).find('img').stop(true,true).toggle("slow");
+    $(".header_left .header_weixin i").css("background-position","left top");
+});
+$(".header_left .header_xinlang").mouseover(function(){
+	$(this).css("background-position","-21px -19px");
+}).mouseout(function(){
+	$(this).css("background-position","left -19px");
+})
+</script>
+				</div>
+				<div class="header_right">
+					<a title="登录">登录</a>
+					<a title="注册">注册</a>
+					<a title="充值">充值</a>
+					<a title="帮助中心">帮助中心</a>
+					<a title="新手指引">新手指引</a>
+				</div>
+			</div>
+		</div>
+		<!--导航-->
+		<div class="nav">
+			<div class="nav_main">
+				<a class="nav_left"></a>
+				<div class="nav_right">
+					<a class="nav_home">首页</a>
+					<a>我要借款</a>
+					<a>我要投资</a>
+					<a>安全保障</a>
+					<a>APP下载</a>
+					<a>关于我们</a>
+				</div>
+			</div>
+		</div>
+		<!--广告-->
+		<div class="banner">
+			<ul>
+				<li>
+					<a></a>
+				</li>
+			</ul>
+		</div>
+		<!--内容-->
+		<div class="content">
+			<!--内容1-特点-->
+				<div class="content_1">
+					<div class="content_1_top">
+						<div class="equal_3">
+							<p>累计交易额</p>
+							<p class="equal_3_color_p">￥<span>2285.5</span>万元</p>
+						</div>
+						<div class="equal_3">
+							<p>累计交易次数</p>
+							<p class="equal_3_color_p"><span>271</span>笔</p>
+						</div>
+						<div class="equal_3">
+							<p>昨日成交金额</p>
+							<p class="equal_3_color_p">￥<span>620.5</span>万元</p>
+						</div>
+					</div>
+					<div class="content_1_bottom">
+						<div class="equal_4">
+							<div class="equal_4_Buibox">
+								<i class="Buibox_i_1"></i>
+								<p>严格风控<br>理财无忧</p>
+							</div>
+						</div>
+						<div class="equal_4">
+							<div class="equal_4_Buibox">
+								<i class="Buibox_i_2"></i>
+								<p>第三方资金托管<br>安全保障</p>
+							</div>
+						</div>
+						<div class="equal_4">
+							<div class="equal_4_Buibox">
+								<i class="Buibox_i_3"></i>
+								<p>低门槛<br>高收益</p>
+							</div>
+						</div>
+						<div class="equal_4">
+							<div class="equal_4_Buibox">
+								<i class="Buibox_i_4"></i>
+								<p>多种期限<br>投资更灵活</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--内容2-理财优选-->
+				<div class="content_2">
+					<!--内容2左-->
+					<div class="content_2_left">
+						<!--左-上-->
+						<div class="contentLeft_top">
+							<div class="imm_text">
+								<h5>理财优选</h5>
+								<span>快捷财富为您保驾护航</span>
+							</div>
+							<div class="imm_exe">
+								<dl>
+									<dd class="imm_exe_first">
+										<i></i>
+										<span>新手专享</span>
+									</dd>
+									<dd>一日投资体验</dd>
+									<dd class="imm_exe_color">
+										<div>
+											<span>年化收益</span>
+											<i>8</i>
+											<span class="imm_bfb">%</span>
+										</div>
+									</dd>
+									<dd class="imm_exe_color">
+										<div>
+											<span>项目期限</span>
+											<i>1</i>
+											<span class="imm_bfb">天</span>
+										</div>
+									</dd>
+									<dd class="imm_exe_first exe">
+										<i class="exe_icon"></i>
+										<a class="exe_text">立即体验</a>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<!--左-下-->
+						<div class="contentLeft_bottom">
+							<!--主要内容box1-->
+							<div class="bottom_major_box">
+								<div class="major_top">
+									<i></i>
+									<a id="major_cyan">宝马X6现存质押贷款（债权编号：*****）</a>
+									<p>可投余额：<span>30000</span> 元</p>
+								</div>
+								<div class="major_bottom">
+									<dl>
+										<dd>
+											<div>
+												<p class="major_p_color"><i>8</i>%</p>
+												<p>年化利率</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p class="major_p_color"><i>15</i>天</p>
+												<p>还款期限</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p>50000.00元</p>
+												<p>借款金额</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p>违约保障类型</p>
+												<p>本息保障</p>
+											</div>
+										</dd>
+									<!--我要投资-->
+										<dd>
+											<div class="major_last_div">
+												<p class="major_read">
+													<i id="major_read_1" style="width:17%"></i>
+													<span id="major_num_1">17%</span>
+												</p>
+												<a class="my_int">我要投资</a>
+											<script type="text/javascript">
+													loadInfoProgress('100.00','17.00',$('#major_read_1'));
+                        							loadProgress('100.00', '17.00', $('#major_num_1'));
+											</script>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<!--主要内容box2-->
+							<div class="bottom_major_box">
+								<div class="major_top">
+									<i class="major_top_r"></i>
+									<a id="major_red">**厂房抵押贷款（债权编号：*****）</a>
+									<p>可投余额：<span>50000</span> 元</p>
+								</div>
+								<div class="major_bottom">
+									<dl>
+										<dd>
+											<div>
+												<p class="major_p_color"><i>14</i>%</p>
+												<p>年化利率</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p class="major_p_color"><i>30</i>天</p>
+												<p>还款期限</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p>300000.00元</p>
+												<p>借款金额</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p>违约保障类型</p>
+												<p>本息保障</p>
+											</div>
+										</dd>
+									<!--我要投资-->
+										<dd>
+											<div class="major_last_div">
+												<p class="major_read">
+													<i id="major_read_2" style="width:75%"></i>
+													<span id="major_num_2">75%</span>
+												</p>
+												<a class="my_int">我要投资</a>
+											<script type="text/javascript">
+													loadInfoProgress('100.00','75.00',$('#major_read_2'));
+                        							loadProgress('100.00', '75.00', $('#major_num_2'));
+											</script>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<!--主要内容box3-->
+							<div class="bottom_major_box">
+								<div class="major_top">
+									<i class="major_top_y"></i>
+									<a id="major_yellow">宝马X6现存质押贷款（债权编号：*****）</a>
+									<p>可投余额：<span>30000</span> 元</p>
+								</div>
+								<div class="major_bottom">
+									<dl>
+										<dd>
+											<div>
+												<p class="major_p_color"><i>8</i>%</p>
+												<p>年化利率</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p class="major_p_color"><i>15</i>天</p>
+												<p>还款期限</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p>50000.00元</p>
+												<p>借款金额</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p>违约保障类型</p>
+												<p>本息保障</p>
+											</div>
+										</dd>
+									<!--我要投资-->
+										<dd>
+											<div class="major_last_div">
+												<p class="major_read">
+													<i id="major_read_3" style="width:17%"></i>
+													<span id="major_num_3">17%</span>
+												</p>
+												<a class="my_int">我要投资</a>
+											<script type="text/javascript">
+													loadInfoProgress('100.00','17.00',$('#major_read_3'));
+                        							loadProgress('100.00', '17.00', $('#major_num_3'));
+											</script>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<!--主要内容box4-->
+							<div class="bottom_major_box">
+								<div class="major_top">
+									<i class="major_top_g"></i>
+									<a id="major_green">诚信标按时还*****</a>
+									<p>可投余额：<span>50000</span> 元</p>
+								</div>
+								<div class="major_bottom">
+									<dl>
+										<dd>
+											<div>
+												<p class="major_p_color"><i>14</i>%</p>
+												<p>年化利率</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p class="major_p_color"><i>30</i>天</p>
+												<p>还款期限</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p>300000.00元</p>
+												<p>借款金额</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p>违约保障类型</p>
+												<p>本息保障</p>
+											</div>
+										</dd>
+									<!--我要投资-->
+										<dd>
+											<div class="major_last_div">
+												<p class="major_read">
+													<i id="major_read_4" style="width:75%"></i>
+													<span id="major_num_4">75%</span>
+												</p>
+												<a class="my_int">我要投资</a>
+												<script type="text/javascript">
+													loadInfoProgress('100.00','75.00',$('#major_read_4'));
+                        							loadProgress('100.00', '75.00', $('#major_num_4'));
+											</script>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<!--主要内容box5-->
+							<div class="bottom_major_box">
+								<div class="major_top">
+									<i class="major_top_b"></i>
+									<a id="major_blue">**厂房抵押贷款（债权编号：*****）</a>
+									<p>可投余额：<span>50000</span> 元</p>
+								</div>
+								<div class="major_bottom major_bottom_1">
+									<dl>
+										<dd>
+											<div>
+												<p class="major_p_color"><i>14</i>%</p>
+												<p>年化利率</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p class="major_p_color"><i>30</i>天</p>
+												<p>还款期限</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p>300000.00元</p>
+												<p>借款金额</p>
+											</div>
+										</dd>
+										<dd>
+											<div>
+												<p>违约保障类型</p>
+												<p>本息保障</p>
+											</div>
+										</dd>
+									<!--我要投资-->
+										<dd>
+											<div class="major_last_div">
+												<p class="major_read">
+													<i id="major_read_5" style="width:75%"></i>
+													<span id="major_num_5">75%</span>
+												</p>
+												<a class="my_int">我要投资</a>
+											<script type="text/javascript">
+													loadInfoProgress('100.00','75.00',$('#major_read_5'));
+                        							loadProgress('100.00', '75.00', $('#major_num_5'));
+											</script>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--内容2右-->
+					<div class="content_2_right">
+						<!--平台公告-->
+						<div class="notice">
+							<p>
+								<span>平台公告</span>
+								<a class="notice_more">更多<i>&gt;&gt;</i></a>
+							</p>
+							<ul>
+								<li><a>·&nbsp;关于注册活动截止的公告</a></li>
+								<li><a>·&nbsp;关于注册奖金发放需要第三方资...</a></li>
+								<li><a>·&nbsp;关于平台注册实名认证公告</a></li>
+								<li><a>·&nbsp;快捷财富平台温馨提示</a></li>
+								<li><a>·&nbsp;关于近期恶意注册公告</a></li>
+							</ul>
+						</div>
+						<!--理财风云榜-->
+						<div class="conduct">
+							<p>
+								<span>理财风云榜</span>
+							</p>
+							<ul>
+								<li>
+									<dl>
+										<dd>排名</dd>
+										<dd>用户名</dd>
+										<dd>投资金额</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dd class="ranking">1</dd>
+										<dd>叶**</dd>
+										<dd>126.80万</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dd class="ranking">2</dd>
+										<dd>hw***</dd>
+										<dd>87.50万</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dd class="ranking">3</dd>
+										<dd>bd***</dd>
+										<dd>67.35万</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dd class="ranking">4</dd>
+										<dd>15***</dd>
+										<dd>57.46万</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dd class="ranking">5</dd>
+										<dd>18**</dd>
+										<dd>43.68万</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			<!--内容3-链接-->
+				<div class="content_3">
+					<div class="cha_top">
+						<dl>
+							<dd class="cha_first_dd">合作结构</dd>
+							<dd>媒体机构</dd>
+						</dl>
+					</div>
+					<div class="cha_bottom_box">
+						<!--合作机构-->
+						<div class="cha_bottom">
+							<p>
+								<a></a>
+								<a class="lkl"></a>
+								<a class="llzf"></a>
+								<a class="ymd"></a>
+							</p>
+							<p>
+								<a class="yyt"></a>
+								<a class="wdzg"></a>
+								<a class="ztzf"></a>
+								<a class="wdty"></a>
+							</p>
+							<p>
+								<a class="jhwy"></a>
+								<a class="whdb"></a>
+								<a class="hlw"></a>
+							</p>
+						</div>
+						<!--媒体结构-->
+						<div class="cha_bottom" style="display:none">
+							<div class="cha_madie">
+								<a class="cctv"></a>
+								<a class="hex"></a>
+								<a class="fenghw"></a>
+								<a class="xinl"></a>
+								<a class="suohu"></a>
+								<a class="wangy"></a>
+							</div>
+							<div class="cha_madie">
+								<a class="tengxw"></a>
+								<a class="xinhw"></a>
+								<a class="mrxw"></a>
+								<a class="jinrj"></a>
+								<a class="zgkjw"></a>
+								<a class="eycn"></a>
+							</div>
+						</div>
+						<script>
+							$(".cha_top dl dd").mouseover(function(){
+								$(".cha_top dl dd").removeClass("cha_first_dd");
+								$(this).addClass("cha_first_dd");
+							var cha=$(".cha_top dl dd").index(this);
+								$(".cha_bottom").stop(true,true).hide();
+								$(".cha_bottom").stop(true,true).eq(cha).slideToggle("slow");
+							});
+						</script>
+					</div>
+				</div>
+			<!--内容4-视频&动态-->
+				<div class="content_4">
+					<!--媒体报道-->
+					<div class="media_report">
+						<div class="content_title">
+							<h4>CCTV媒体报道</h4>
+							<p></p>
+						</div>
+						<div class="report_bottom">
+							<a>
+								<img src="images/CCTV_index_pic.png" alt="CCTV媒体报道">
+							</a>
+							<p>快捷财富走进CCTV与您分享创业心得</p>
+							<script>
+								$(".report_bottom").hover(function(){
+									$(this).find("p").stop(true,true);
+									$(this).find("p").animate({bottom:"2"},"fast");
+								},function(){
+									$(this).find("p").animate({bottom:"-30"},"slow");
+								});
+							</script>
+						</div>
+					</div>
+					<!--企业动态-->
+					<div class="trends">
+						<div class="content_title">
+							<h4>快捷财富企业动态</h4>
+							<p></p>
+						</div>
+						<div class="trends_bottom">
+							<a title="掌上财富触手可及" class="trends_pic">
+								<img src="images/business_index_pic.png" alt="掌上财富触手可及">
+							</a>
+							<div class="trends_cha_text">
+								<a>启帆小组***</a>
+								<a>启帆小组***</a>
+								<a>启帆小组***</a>
+								<a>启帆小组***</a>
+							</div>
+						</div>
+					</div>
+					<!--行业资讯-->
+					<div class="message">
+						<div class="content_title" style="width:476px">
+							<h4>行业资讯</h4>
+							<p></p>
+						</div>
+						<div class="massage_bottom">
+							<a title="行业资讯" class="massage_pic">
+								<img src="images/trade_index_pic.png" alt="行业资讯">
+							</a>
+							<dl>
+								<dt>
+									<a>P2P网贷平台需要具备</a>
+								</dt>
+								<dd>2015年-09-11</dd>
+							</dl>
+							<dl>
+								<dt>
+									<a>民间车贷业务如何对接</a>
+								</dt>
+								<dd>2015年-09-10</dd>
+							</dl>
+							<dl>
+								<dt>
+									<a>启帆小组***</a>
+								</dt>
+								<dd>2015年-09-12</dd>
+							</dl>
+							<dl>
+								<dt>
+									<a>启帆小组***</a>
+								</dt>
+								<dd>2015年-09-13</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+		</div>
+		<!--页脚-->
+		<div class="footer">
+			<div class="footer_box">
+				<div class="box_top">
+					<dl class="footer_nav">
+						<dt>
+							<a class="footer_nav_a">新手指引</a>
+							<a>安全保障</a>
+							<a>帮助中心</a>
+							<a>资费介绍</a>
+							<a>关于我们</a>
+							<a>理财攻略</a>
+							<a>贷款攻略</a>
+						</dt>
+						<dd>
+							<a class="footer_nav_a">关注我们</a>
+							<i class="footer_xl"></i>
+							<a>新浪微博</a>
+							<i class="footer_wx"></i>
+							<a>微信公众号</a>
+							<i class="footer_kf"></i>
+							<a>在线服务</a>
+							<i class="footer_qq"></i>
+							<a>快捷APP</a>
+							<i class="footer_sj"></i>
+							<a>QQ交流群</a>
+						</dd>
+					</dl>
+					<ul class="footer_service">
+						<li>客服热线</li>
+						<li class="service_num">4000-233188</li>
+						<li class="service_time">服务时间（周一至周五9：00-17:30）</li>
+					</ul>
+				</div>
+				<div class="box_bottom"></div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+*{font-family:"微软雅黑";}
+div,a,p,img,dl,dd,dt,ul,li,ol,h1,h2,h3,h4,h5,h6,input,body{margin:0px;padding:0px;}
+a{text-decoration:none;}
+img{display:block;border:none;}
+ul,li,ol{list-style:none;}
+input{border:none;}
+/*上*/
+.exe_top{width:100%;height:auto;background:#053a6c;}
+.exe_top_banner{width:100%;height:auto;}
+.exe_top_title{width:100%;height:250px;background:repeat-x url(../images/exe_title_bg_line.png);position:relative;z-index:5}
+.exe_title_center{width:1180px;margin:0 auto;height:144px;background:center no-repeat url(../images/exe_title_text_img.png);position:relative;}
+.exe_title_center i{display:block;width:392px;height:264px;}
+.exe_center_left{background:center no-repeat url(../images/sheep_icon_left.png);position:absolute;left:0px;bottom:-176px;z-index:10;}
+.exe_center_right{background:center no-repeat url(../images/sheep_icon_right.png);position:absolute;right:0px;bottom:-176px;z-index:10;}
+.exe_ima_bg{width:100%;height:672px;background:#fed639 url(../images/ima_bg.png);margin-top:-12px;position:relative;z-index:1}
+.exe_dra_exe{width:100%;height:606px;position:absolute;left:0px;bottom:-62px;z-index:5}
+/*转盘*/
+.exe_dra_id{width:1018px;margin:0 auto;height:554px;position:absolute;left:50%;bottom:0px;background:center no-repeat url(../images/dra_id_bg.png);margin-left:-508px;}
+.lottery-but{width:240px;height:240px;position:absolute;left:99px;top:131px;cursor:pointer;}
+.lottery-txt {position: absolute;bottom:34px;font-size:16px;color:#FFF;left:52px;width:336px;text-align:center;}
+/*人数中奖*/
+.exe_num_win{width:420px;height:30px;line-height:30px;position:absolute;right:76px;top:195px;color:white;text-align:right;font-size:14px;}
+.exe_num_win span{font-size:22px;color:#fff100;}
+/*我的奖品*/
+.exe_My_prize{display:block;width:74px;height:20px;line-height:20px;border-radius:5px;background:#fff100;position:absolute;top:232px;right:163px;text-align:center;color:#ff4e00;font-size:14px;}
+/*获奖列表*/
+.exe_bear_li{width:382px;overflow:Hidden;height:278px;position:absolute;top:265px;right:93px;}
+.exe_bear_li h4{overflow:hidden;width:100%;height:26px;line-height:26px;background:#d62a20;border-radius:10px;}
+.exe_bear_li h4 span{float:left;display:block;width:33.33%;overflow:hidden;text-align:center;color:white;font-size:16px;}
+.exe_bear_content{width:100%;height:252px;overflow:hidden;position:relative;}
+.exe_bear_con_box{width:100%;overflow:hidden;position:absolute;top:0px;left:0px;}
+.exe_bear_con_box .exe_bear_con_li{width:100%;line-height:32px;}
+.exe_bear_con_box .exe_bear_con_li dl{width:100%;overflow:hidden;}
+.exe_bear_con_box .exe_bear_con_li dl dd{float:left;width:33.33%;line-height:32px;text-align:center;font-size:12px;font-weight:bold;}
+.exe_last_dd{color:#da1413;}
+/*下*/
+.exe_bottom{width:100%;height:3672px;background:#053a6c center 647px no-repeat url(../images/bottom_bg.png);overflow:hidden;}
+/*bottom_01*/
+	.exe_bottom_01{width:1200px;margin:0 auto;overflow:hidden;margin-top:116px;margin-bottom:204px;}
+	.exe_bottom_01 li{width:100%;overflow:hidden;}
+	
+	.exe_b_01_t{margin-bottom:130px;}
+	.exe_b_01_t span{display:block;}
+	.exe_left_01{float:left;width:663px;height:496px;background:top center no-repeat url(../images/cpr_box.png);}
+	.exe_right_01{float:right;width:488px;height:472px;background:center 30px no-repeat url(../images/first_input.png);position:relative;}
+	.exe_right_01 a{display:block;text-align:center;width:100%;line-height:70px;color:white;font-size:32px;background:red;border-radius:8px;position:absolute;left:0px;bottom:0px;font-weight:bold;}
+	.right_01 a:hover{cursor:pointer;background:#ff5632;}
+	
+	.exe_b_02_t{width:100%;height:224px;background:center no-repeat url(../images/b_02_t.png);margin-bottom:70px;}	
+	.exe_b_03_t p{line-height:36px;font-size:24px;color:#3a81cc;font-weight:bold;letter-spacing:2px;}
+	/*bottom_02*/
+	.exe_bottom_02{width:1200px;margin:0 auto;}
+	.exe_bottom_02 li{width:100%;overflow:hidden;}
+	
+	.exe_b_04_t{margin-bottom:130px;}
+	.exe_b_04_t span{display:block;}
+	.exe_left_04{float:left;width:663px;height:592px;background:center bottom no-repeat url(../images/cpr_box.png);}
+	.exe_right_04{float:right;width:433px;height:592px;background:center top no-repeat url(../images/cont_input.png);position:relative;}
+	.exe_right_04 a{display:block;text-align:center;width:100%;line-height:70px;color:white;font-size:32px;background:red;border-radius:8px;position:absolute;left:0px;bottom:0px;font-weight:bold;}
+	.exe_right_04 a:hover{cursor:pointer;background:#ff5632;}
+	
+	.exe_b_05_t{width:100%;height:557px;background:center no-repeat url(../images/b_05_t.png);margin-bottom:44px;}		
+	.exe_b_06_t p{line-height:36px;font-size:24px;color:#3a81cc;font-weight:bold;letter-spacing:2px;}

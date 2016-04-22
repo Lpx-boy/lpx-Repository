@@ -1,0 +1,83 @@
+/*重置*/
+*:focus{outline:none}
+body{font: 12px/1.5 "微软雅黑",Helvetica Neue,Helvetica,Hiragino Sans GB,tahoma,arial,sans-serif;}
+h1,h2,h3,h4,h5,ul,li,ol,dl,dd,dt,li,input,div,a,p,img,body{margin:0;padding:0;}
+ul,li{list-style:none;}
+img{border:none;display:block;}
+input{border:solid 1px black;}
+a{text-decoration:none;}
+body{background:#F7F7F7;}
+/*top*/
+.invite_top{width:100%;overflow:hidden;}
+/*bottom*/
+.invite_bottom{width:100%;height:2811px;background:center no-repeat url(../images/invite_bottom.png);position:relative;}
+	/*金钱袋子*/
+	.money_bag{width:1464px;height:2956px;background:center no-repeat url(../images/money_bag.png);position:absolute;left:50%;top:-144px;margin-left:-732px;}
+		/*主要活动内容*/
+		.money_bag_main{width:944px;height:2572px;background:center no-repeat url(../images/money_bag_main.png);position:absolute;left:50%;top:238px;margin-left:-472px;}
+			/*活动1*/
+			.money_active_1{width:630px;height:204px;margin:0 auto;margin-top:296px;}
+				.money_active_1 h4{font-size:24px;color:#a54d0c;}
+					.money_active_1 h4 span{color:#e42825;}
+				.active_state{overflow:hidden;margin-top:60px;}
+					.active_state ul{width:376px;overflow:hidden;float:left;}
+						.active_state ul li{width:100%;}
+							.active_state ul li dl{overflow:hidden;}
+								.active_state ul li dl dd{float:left;height:50px;font-size:14px;color:#a86325;}
+									.active_state .state_text_left{height:16px;line-height:16px;}
+										.active_state .state_text_left span{margin-left:8px;}
+									.active_state .state_color{color:#F9D98A;}
+										.active_state .state_color span{color:#a86325;}
+									.active_state .state_text_right{width:300px;line-height:16px;text-align:left}
+					.active_state a{display:block;float:right;font-size:28px;color:#f4f4f4;width:180px;height:58px;line-height:58px;text-align:center;border-radius:5px;background:#e42825;margin-top:24px;transition:background 0.5s;}
+					.active_state a:hover{cursor:pointer;background:#D88802;}
+			/*活动2&活动3*/
+			.money_active_2{width:704px;height:496px;margin:0 auto;margin-top:296px;}
+				.money_active_2 h4{font-size:24px;color:#a54d0c;}
+					.money_active_2 h4 span{color:#e42825;}
+				.active_state_2{overflow:hidden;margin-top:60px;}
+						.active_state_2 ul{overflow:hidden;float:left;margin-left:13px;}
+						.active_state_2 ul li{width:100%;}
+							.active_state_2 ul li dl{overflow:hidden;}
+								.active_state_2 ul li dl dd{float:left;font-size:14px;color:#a86325;}
+									.active_state_2 .state_text_left{height:16px;line-height:16px;}
+										.active_state_2 .state_text_left span{margin-left:8px;}
+									.active_state_2 .state_color{color:#F9D98A;}
+										.active_state_2 .state_color span{color:#a86325;}
+									.active_state_2 .state_text_right{width:570px;line-height:18px;text-align:left}	
+				.money_main_pic{width:100%;height:203px;background:center top no-repeat url(../images/money_main_pic.png);margin-top:34px;}	
+				.money_active_2 a{display:block;font-size:28px;color:#f4f4f4;width:180px;height:58px;line-height:58px;text-align:center;border-radius:5px;background:#e42825;margin:0 auto;margin-top:24px;transition:background 0.5s;}
+				.money_active_2 a:hover{cursor:pointer;background:#D88802;}
+			/*活动4*/
+			.money_active_4{width:704px;height:300px;margin:0 auto;margin-top:280px;}
+				.money_active_4 h4{font-size:24px;color:#a54d0c;line-height:28px;margin-left:26px;}
+					.money_active_4 h4 span{color:#e42825;}
+				.active_state_4{overflow:hidden;margin-top:28px;}
+						.active_state_4 ul{overflow:hidden;float:left;}
+						.active_state_4 ul li{width:100%;}
+							.active_state_4 ul li dl{overflow:hidden;}
+								.active_state_4 ul li dl dd{float:left;font-size:14px;color:#a86325;}
+									.active_state_4 .state_text_left{height:16px;line-height:16px;}
+										.active_state_4 .state_text_left span{margin-left:8px;}
+									.active_state_4 .state_color{color:#F9D98A;}
+										.active_state_4 .state_color span{color:#a86325;}
+									.active_state_4 .state_text_right{width:570px;line-height:18px;text-align:left}
+				.money_active_4 a{display:block;font-size:28px;color:#f4f4f4;width:180px;height:58px;line-height:58px;text-align:center;border-radius:5px;background:#e42825;margin:0 auto;margin-top:42px;transition:background 0.5s;}
+				.money_active_4 a:hover{cursor:pointer;background:#D88802;}
+				.money_all{width:100%;overflow:hidden;text-align:center;margin-top:60px;color:#2d2d2d;}
+/*浮框*/
+.money_float_frame{width:160px;height:450px;background:center no-repeat url(../images/money_float_frame.png);position:fixed;right:0px;top:226px;}
+	.frame_box{width:146px;height:403px;overflow:hidden;margin-top:36px;}
+		.money_float_frame a{display:block;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-o-user-select:none;transition:background-color 0.5s;cursor:pointer;}
+		.money_float_frame a:hover{background:rgba(0,0,0,0.4)}
+		.money_float_frame .frame_login{width:100%;height:55px;background:center top no-repeat url(../images/money_float_login.png);margin-top:12px;margin-bottom:12px;}
+		.money_float_frame .frame_login:hover{background:center top no-repeat url(../images/money_float_login.png);}
+		.money_float_frame .login_chaining{width:100%;height:72px;text-align:center;background:#feeebb;}
+		.money_float_frame .login_bg_color{background:#fc3f3e;}
+		.money_float_frame .login_top{width:100%;height:36px;line-height:36px;text-align:center;border-bottom-left-radius:2px;border-bottom-right-radius:2px;font-size:22px;color:#e53531;font-style:italic;}
+			.money_float_frame .login_chaining .chaining_center{display:inline-block;margin-top:10px;}
+				.login_chaining i{display:block;width:27px;height:27px;background:right -55px no-repeat url(../images/money_float_login.png);margin-left:23px;}
+					.login_chaining .zxkf{width:26px;height:26px;background-position:right -82px;margin-left:24px;}
+					.login_chaining .com_sug{height:26px;width:35px;background-position:right -108px;margin-left:28px;}
+					.login_chaining .ser_hot{width:26px;height:25px;background-position:right -134px;margin-left:46px;}
+				.money_float_frame .chaining_center span{display:block;font-size:18px;color:#e53531;font-weight:bold;}

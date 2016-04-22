@@ -1,0 +1,42 @@
+/*index_头部*/
+.hot_l_icon,.w_xin,.x_lang,.phone_icon,.right_dl_i{background: no-repeat url(../images/index_header_bg.png);}
+.index_header{width:100%;}
+	/*index_头部_top*/
+.index_header_top{width:100%;height:30px;background:#31384a;}
+
+.index_header_top_c{width:1200px;margin:0 auto;height:30px;}
+		/*top_c_左边*/
+.top_c_left{float:left;width:280px;height:30px;line-height:30px;}
+.top_c_left span{float:left;display:inline-block;}
+.hot_l{font-size:14px;color:white;}
+.hot_l_icon{float:left;width:17px;height:17px;margin-top:6px;margin-left:9px;margin-right:12px;background-position:-6px top;}
+.hot_l_num{font-size:14px;color:#dd3945;}
+.top_c_left a{float:left;cursor:pointer;}
+.w_xin{width:19px;height:19px;margin-top:6px;margin-left:8px;margin-right:14px;background-position:-5px -17px}
+.x_lang{width:26px;height:22px;margin-top:4px;background-position:-1px -35px}
+		/*top_c_右边*/
+.top_c_right{float:right;width:260px;height:30px;line-height:30px;}
+.phone_icon{float:left;width:13px;height:20px;margin-top:5px;margin-right:7px;background-position:-8px -58px;}
+.top_c_right a{float:left;color:white;font-size:14px;margin-right:22px;cursor:pointer;}
+.top_c_right a:hover{color:#dd3945;}
+.top_c_right .guige{margin-right:0px;}
+	/*index_头部_bottom*/
+.index_header_bottom{clear:left;width:1200px;margin:0 auto;height:90px;}
+		/*bottom_左边*/
+.bottom_left{float:left;width:339px;height:90px;background:center no-repeat url(../images/logo_bg.png);margin-left:12px;}
+		/*bottom_右边*/
+.bottom_right{float:right;width:720px;height:90px;line-height:90px;}
+.right_ul{float:left;width:448px;height:90px;}
+.right_ul li{float:left;}
+.right_ul li a{cursor:pointer;font-size:14px;margin-right:16px;padding:5px;border-radius:20px;}
+.right_ul li a:hover{color:#dd3945;border-bottom:solid 1px #dd3945;box-shadow:1px 1px 2px #B60000;}
+.right_ul .r_ul_first_a{color:#dd3945;border-bottom:solid 1px #dd3945;box-shadow:1px 1px 2px #B60000;}
+.right_ul .r_ul_last_a{margin-right:0px;}
+.right_dl{float:right;width:210px;height:90px;}
+.right_dl_i{float:left;width:30px;height:30px;margin-top:30px;margin-right:14px;background-position:left -78px;}
+.right_dl dd{float:left;margin-right:8px;}
+.right_dl dd a{cursor:pointer;font-size:14px;}
+.right_dl dd a:hover{color:#dd3945;}
+.right_dl .right_dl_last_dd{margin-right:0px;}
+/*index_banner*/
+.index_banner{clear:both;width:100%;height:384px;background:#ef3d31 center no-repeat url(../images/banner_bg.png);}

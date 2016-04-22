@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/inv_index.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/new_file.js"></script>
+		<script src="js/dec.js"></script>
+		<meta charset="utf-8">
+		<title>我要投资</title>
+	</head>
+	<body style="background:#f0f0f0">
+		<!--投资_top-->
+		<div class="inv_index_top">
+			<!--您的位置-->
+			<p class="inv_cha_text">
+				<span class="inv_loca">您所在的位置:</span>
+				<a>我要投资</a>
+				<span class="inv_gap">&gt;</span>
+				<span>投资项目</span>
+			</p>
+			<!--链接文字-->
+			<div class="inv_main_click">
+				<ul>
+					<li>
+						<dl>
+							<dd class="inv_first_dd">预期年化收益：</dd>
+							<dd>全部</dd>
+							<dd>8%以上</dd>
+							<dd>10%以上</dd>
+							<dd>14%以上</dd>
+							<dd>16%以上</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dd class="inv_first_dd">项目期限：</dd>
+							<dd>全部</dd>
+							<dd>1个月以下</dd>
+							<dd>1个月</dd>
+							<dd>3个月以下</dd>
+							<dd>6个月以下</dd>
+							<dd>1年以下</dd>
+							<dd>2年以下</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dd class="inv_first_dd">项目类型：</dd>
+							<dd>全部</dd>
+							<dd>车辆质押系列</dd>
+							<dd>房产抵押系列</dd>
+							<dd>租金贷系列</dd>
+							<dd>净值标系列</dd>
+							<dd>信用贷系列</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dd class="inv_first_dd">还款方式：</dd>
+							<dd class="inv_rapay_dd">按月分期还款</dd>
+							<dd class="inv_rapay_dd">到期还本按月还息</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dd class="inv_first_dd">项目状态：</dd>
+							<dd>在售</dd>
+							<dd>售罄</dd>
+						</dl>
+					</li>
+					<li style="border:none">
+						<dl>
+							<dd class="inv_first_dd">理财模式：</dd>
+							<dd style="margin-left:6px;">快车贷</dd>
+							<dd>捷房贷</dd>
+							<dd>财租贷</dd>
+							<dd>净值标</dd>
+							<dd>富信贷</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--中间小banner图-->
+		<div title="打造更安全的金融生态系统" class="among_banner"></div>
+		<!--投资_bottom-->
+		<div class="inv_index_bottom">
+			<div class="inv_arr_click">
+				<dl>
+					<dd class="inv_arr_first_dd">综合排序<i class="inv_arrows_2"></i></dd>
+					<dd>发布时间<i></i></dd>
+					<dd>年化利率<i></i></dd>
+					<dd>借款金额<i></i></dd>
+					<dd>还款时间<i></i></dd>
+					<dd>项目进展<i></i></dd>
+				</dl>
+				<script>
+					$(".inv_index_bottom dl dd").mouseover(function(){
+						$(".inv_index_bottom dl dd i").addClass("inv_arrows_2")
+						$(".inv_index_bottom dl dd").removeClass("inv_arr_first_dd");
+						$(this).addClass("inv_arr_first_dd");
+					}).mouseout(function(){
+						$(".inv_index_bottom dl dd").removeClass("inv_arr_first_dd");
+						$(".inv_index_bottom dl dd i").removeClass("inv_arrows inv_arrows_1");
+					}).click(function(){
+					var click=$(".inv_index_bottom dl dd").index(this);
+						$(".inv_index_bottom dl dd i").removeClass("inv_arrows inv_arrows_2");
+						$(".inv_index_bottom dl dd i").eq(click).toggleClass("inv_arrows inv_arrows_1");
+					});
+				</script>
+			</div>
+			<!--投资详情-->
+			<div class="inder_bottom_main">
+				<h5>一日投资体验标1</h5>
+				<ul>
+					<li>
+						<p>年化利率</p>
+						<p id="main_num_1" class="main_red_p">8.00%</p>
+						<script type="text/javascript">
+							loadProgress('100.00','8.00',$('#main_num_1'));
+						</script>
+					</li>
+					<li>
+						<p>还款期限</p>
+						<p class="main_gray_p">31天</p>
+					</li>
+					<li>
+						<p>还款金额</p>
+						<p class="main_gray_p">7000000.00元</p>
+					</li>
+					<li>
+						<p>到期本息还款</p>
+						<p class="main_gray_p">还款方式</p>
+					</li>
+					<li>
+						<p class="main_black_p">违约保障类型 本息保障</p>
+						<p class="main_gray_p">还需借款<span>88000</span>元</p>
+					</li>
+					<li class="main_last_li">
+						<div>
+							<span class="main_read_box">
+								<i id="read_box" style="width:20%"></i>
+							</span>
+							<span id="read_box_num">20%</span>
+						</div>
+						<script type="text/javascript">
+							loadInfoProgress('100.00','20.00',$('#read_box'));
+                        	loadProgress('100.00','20.00',$('#read_box_num'));
+						</script>
+						<a>投资</a>
+					</li>
+				</ul>
+			</div>
+			<!--投资详情-->
+			<div class="inder_bottom_main">
+				<h5>中小企业短期资金周转（债权编号：*****）</h5>
+				<ul>
+					<li>
+						<p>年化利率</p>
+						<p id="main_num_2" class="main_red_p">11.00%</p>
+						<script type="text/javascript">
+							loadProgress('100.00', '11.00', $('#main_num_2'));
+						</script>
+					</li>
+					<li>
+						<p>还款期限</p>
+						<p class="main_gray_p">15天</p>
+					</li>
+					<li>
+						<p>还款金额</p>
+						<p class="main_gray_p">60000.00元</p>
+					</li>
+					<li>
+						<p>到期本息还款</p>
+						<p class="main_gray_p">还款方式</p>
+					</li>
+					<li>
+						<p class="main_black_p">违约保障类型 本息保障</p>
+						<p class="main_gray_p">还需借款<span>62000</span>元</p>
+					</li>
+					<li class="main_last_li">
+						<div>
+							<span class="main_read_box">
+								<i id="read_box_1" style="width:66%"></i>
+							</span>
+							<span id="read_box_num_1">66%</span>
+						</div>
+						<script type="text/javascript">
+							loadInfoProgress('100.00','66.00',$('#read_box_1'));
+                        	loadProgress('100.00','66.00',$('#read_box_num_1'));
+						</script>
+						<a>投资</a>
+					</li>
+				</ul>
+			</div>
+			<!--投资详情-->
+			<div class="inder_bottom_main">
+				<h5>宝马X6现存质押贷款（债权编号：*****）</h5>
+				<ul>
+					<li>
+						<p>年化利率</p>
+						<p id="main_num_3" class="main_red_p">9.00%</p>
+						<script type="text/javascript">
+							loadProgress('100.00', '9.00', $('#main_num_3'));
+						</script>
+					</li>
+					<li>
+						<p>还款期限</p>
+						<p class="main_gray_p">5天</p>
+					</li>
+					<li>
+						<p>还款金额</p>
+						<p class="main_gray_p">1000000.00元</p>
+					</li>
+					<li>
+						<p>到期本息还款</p>
+						<p class="main_gray_p">还款方式</p>
+					</li>
+					<li>
+						<p class="main_black_p">违约保障类型 本息保障</p>
+						<p class="main_gray_p">还需借款<span>17000</span>元</p>
+					</li>
+					<li class="main_last_li">
+						<div>
+							<span class="main_read_box">
+								<i id="read_box_2" style="width:70%"></i>
+							</span>
+							<span id="read_box_num_2">70%</span>
+						</div>
+						<script type="text/javascript">
+							loadInfoProgress('100.00','70.00',$('#read_box_2'));
+                        	loadProgress('100.00','70.00',$('#read_box_num_2'));
+						</script>
+						<a>投资</a>
+					</li>
+				</ul>
+			</div>
+			<!--投资详情-->
+			<div class="inder_bottom_main">
+				<h5>一日投资体验标1</h5>
+				<ul>
+					<li>
+						<p>年化利率</p>
+						<p id="main_num_4" class="main_red_p">10.00%</p>
+						<script type="text/javascript">
+							loadProgress('100.00', '10.00', $('#main_num_4'));
+						</script>
+					</li>
+					<li>
+						<p>还款期限</p>
+						<p class="main_gray_p">4天</p>
+					</li>
+					<li>
+						<p>还款金额</p>
+						<p class="main_gray_p">1000000.00元</p>
+					</li>
+					<li>
+						<p>到期本息还款</p>
+						<p class="main_gray_p">还款方式</p>
+					</li>
+					<li>
+						<p class="main_black_p">违约保障类型 本息保障</p>
+						<p class="main_gray_p">还需借款<span>40000</span>元</p>
+					</li>
+					<li class="main_last_li">
+						<div>
+							<span class="main_read_box">
+								<i id="read_box_3" style="width:100%"></i>
+							</span>
+							<span id="read_box_num_3">100%</span>
+						</div>
+						<script type="text/javascript">
+							loadInfoProgress('100.00','100.00',$('#read_box_3'));
+                        	loadProgress('100.00','100.00',$('#read_box_num_3'));
+						</script>
+						<a>投资</a>
+					</li>
+				</ul>
+			</div>
+			<!--投资详情-->
+			<div class="inder_bottom_main">
+				<h5>一日投资体验标1</h5>
+				<ul>
+					<li>
+						<p>年化利率</p>
+						<p id="main_num_5" class="main_red_p">8.00%</p>
+						<script type="text/javascript">
+							loadProgress('100.00', '8.00', $('#main_num_5'));
+						</script>
+					</li>
+					<li>
+						<p>还款期限</p>
+						<p class="main_gray_p">20天</p>
+					</li>
+					<li>
+						<p>还款金额</p>
+						<p class="main_gray_p">1000000.00元</p>
+					</li>
+					<li>
+						<p>到期本息还款</p>
+						<p class="main_gray_p">还款方式</p>
+					</li>
+					<li>
+						<p class="main_black_p">违约保障类型 本息保障</p>
+						<p class="main_gray_p">还需借款<span>65000</span>元</p>
+					</li>
+					<li class="main_last_li">
+						<div>
+							<span class="main_read_box">
+								<i id="read_box_4" style="width:100%"></i>
+							</span>
+							<span id="read_box_num_4">100%</span>
+						</div>
+						<script type="text/javascript">
+							loadInfoProgress('100.00','100.00',$('#read_box_4'));
+                        	loadProgress('100.00','100.00',$('#read_box_num_4'));
+						</script>
+						<a>投资</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/loan_par.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/new_file.js"></script>
+		<meta charset="utf-8">
+		<title>我要投资新改版2015.10.24</title>
+	</head>
+
+	<body style="background:#f0f0f0">
+		<div class="loan_par_box">
+			<!--顶部-->
+			<div class="par_top">
+				<!--链接列表-->
+				<p class="return_text">
+					<span class="text_pos">您所在的位置:</span>
+					<a>投资项目</a>
+					<span class="text_int">&gt;</span>
+					<a>快车贷</a>
+					<span class="text_int">&gt;</span>
+					<span>项目详情</span> 
+				</p>
+				<div class="kind_inf_top">
+					<!--top_左-->
+					<div class="inf_top_left">
+						<!--标题-->
+						<div class="top_left_title">
+							<p class="title_p_1">
+								快车贷
+								<i>&nbsp;</i> 宝马X6现存质押贷款
+								<span>(债权编号：*****)</span>
+							</p>
+							<p class="title_p_2">发布时间：<span>2015-09-14</span><i>&nbsp;</i><span>10:10:08</span></p>
+						</div>
+						<!--内容-->
+						<div class="top_left_box">
+							<div class="left_box_main">
+								<div class="box_main_top">
+									<dl>
+										<dd class="top_dd_1">
+											<p>借款金额</p>
+											<p class="dd_1_p">￥<span>15,000.00</span></p>
+										</dd>
+										<dd class="top_dd_2">
+											<p>预期年华收益率</p>
+											<p class="dd_1_p"><span>14</span>%</p>
+										</dd>
+										<dd class="top_dd_3">
+											<p>期限</p>
+											<p class="dd_1_p"><span>30</span>天</p>
+										</dd>
+									</dl>
+								</div>
+								<div class="box_main_bottom">
+									<ul>
+										<li class="bottom_left_li_1">
+											<div>
+												<span>投资进度：</span>
+												<p class="red_read">
+													<i id="progress_487" style="width:80%;"></i>
+												</p>
+												<span id="num_tren">80%</span>
+												<script type="text/javascript">
+													loadInfoProgress('100.00','80.00',$('#progress_487'));
+                        							loadProgress('100.00', '80.00', $('#num_tren'));
+												</script>
+											</div>
+											<p>还款方式：到期一次性返本付息</p>
+										</li>
+										<li class="bottom_left_li_2">
+											<p>剩余金额：<span>68,217.59</span>元</p>
+											<p>剩余时间：<span>12</span>天<span>06</span>小时<span>59</span>秒</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--top_右-->
+					<div class="inf_top_right">
+						<div class="right_main">
+							<p>账户可用余额：<span>0.00</span>元<a class="rech">充值</a></p>
+							<p>最高可投 ：<span>28000.00</span>元</p>
+							<p>最小投资单位：<span>100.00</span>元</p>
+							<div class="inv_money">
+								<span>投资金额：</span>
+								<div class="money_right">
+									<input type="text" placeholder="100"> 元
+								</div>
+								<!--判断浏览器是否适合placeholder-->
+								<script>
+									$(function(){
+							if(!placeholderSupport()){   
+							    $('[placeholder]').focus(function() {
+							        var input = $(this);
+							        if (input.val() == input.attr('placeholder')) {
+							            input.val('');
+							            input.removeClass('placeholder');
+							        }
+							    }).blur(function() {
+							        var input = $(this);
+							        if (input.val() == '' || input.val() == input.attr('placeholder')) {
+							            input.addClass('placeholder');
+							            input.val(input.attr('placeholder'));
+							        }
+							    }).blur();
+							};
+							})
+							function placeholderSupport() {
+							    return 'placeholder' in document.createElement('inf_top_right money_right input');
+							}
+								</script>
+							</div>
+							<input class="inv_click" type="button" value="立即投资">
+							<p>到期本息 ：<span>100.00</span>元</p>
+							<p>实际到期本息 ：<span>100.00</span>元</p>
+<script>
+	$(".inf_top_right .inv_click").click(function(){
+		$(".int_butt").slideDown("slow");
+	});
+</script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--底部-->
+			<div class="par_bottom">
+				<div class="par_bottom_top">
+					<dl>
+						<dd class="sole_dd">项目介绍</dd>
+						<dd>担保情况</dd>
+						<dd>用户信用</dd>
+						<dd>投资记录</dd>
+						<dd>还款记录</dd>
+					</dl>
+				</div>
+				<div class="par_bottom_main">
+					<!--内容1-项目介绍-->
+					<ul class="main_in">
+						<li>
+							<i></i>
+							<div class="main_text_int">
+								<h5>项目简介：</h5>
+								<p>要求交代借款企业或者个人的基本信息状况，企业成立日期，注册资本，承诺付款日期等等可以突出标的不同或者标的，优势的讯息，质押标要求说明质押率，质押物品，单价，市估值，数量等等，存放大致地址.............
+</p>
+							</div>
+						</li>
+						<li>
+							<i class="pro_int_icon_2"></i>
+							<div class="main_text_int">
+								<h5>收益说明：</h5>
+								<p>融资总额30000元，年化收益率14%，融资期限30天。</p>
+							</div>
+						</li>
+						<li>
+							<i class="pro_int_icon_3"></i>
+							<div class="main_text_int">
+								<h5>资金用途：</h5>
+								<p>短期经营资金周转 / 需求资金扩大业务范围/等等</p>
+							</div>
+						</li>
+						<li style="height:102px">
+							<i class="pro_int_icon_4"></i>
+							<div class="main_text_int">
+								<h5>风险控制：</h5>
+								<p>说明快捷财富风控团队实地调查了借款人或者借款人及公司（企业），对借款人及公司的银行流水原件、销售合同原件、进货出货原始单据、纳税凭证原件、财务报表、租赁合同、水费、电费等进行了细致的核对及分析，通过人民银行审查了借款人及公司的征信报告，借款人及公司的银行负债合理，无任何不良记录。借款人
+公司业务稳定，盈利良好，月营业额维持在*万左右，确保第一还款来源充足。</p>
+							</div>
+						</li>
+					</ul>
+					<!--内容2-担保情况-->
+					<div class="main_in" style="display:none">
+						<div class="main_gua">
+							<div class="gua_1">
+								<i></i>
+								<h5>保障措施:</h5>
+							</div>
+							<p class="gua_2">本笔贷款由第三方担保机构提供担保，若借款人违约，由担保机构进行代偿，担保机构自行处置借款人资产，第二还款来源有保障；借款到期当日，若投资人未收到本金及利息，快捷财富公司将启动风险拨备金、风险保障金机制，垫付投资人的本金及利息，第三还款来源有保障。</p>
+						</div>
+						<div class="main_gua">
+							<div class="gua_1">
+								<i class="gua_icon_2"></i>
+								<h5>担保方说明：</h5>
+							</div>
+							<p class="gua_2">担保机构为****** 成立***，注册资本***，经*****许可，许可证号:粤****，与***（例如那些国企 银行 或者知名机构）建立了战略合作关系，目前授信额度为**元。</p>
+						</div>
+						<div class="main_gua">
+							<div class="gua_1">
+								<i class="gua_icon_3"></i>
+								<h5>相关资料展示：</h5>
+							</div>
+							<p class="gua_2" style="text-indent:3em;">（各类此业务承载的文件以附件上传此区域）</p>
+							<div class="gua_pic_box">
+								<dl>
+									<dd></dd>
+									<dd></dd>
+									<dd></dd>
+									<dd></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<!--内容3-用户信用-->
+					<div class="main_in" style="display:none;position:relative;">
+						<div class="user_top">
+							<div class="user_top_title">
+								<i></i>
+								<h5>用户基本信息</h5>
+							</div>
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>性别：</td>
+									<td>工婚姻状况：</td>
+									<td class="user_last_td">月均收入：<span>12000元</span></td>
+								</tr>
+								<tr>
+									<td>工作年限:<span>10年以上</span></td>
+									<td>职位：</td>
+									<td class="user_last_td">住房条件：<span>有商品房</span></td>
+								</tr>
+								<tr>
+									<td>是否有车： <span>有</span></td>
+									<td>其他资产描述：</td>
+									<td class="user_last_td"></td>
+								</tr>
+							</table>
+						</div>
+						<div class="user_bottom">
+							<div class="user_top_title">
+								<i class="user_icon_2"></i>
+								<h5>信用记录</h5>
+							</div>
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>信用总分</td>
+									<td>信用额度</td>
+									<td>剩余额度</td>
+									<td>申请借款</td>
+									<td class="user_last_td">成功借款</td>
+								</tr>
+								<tr class="user_tr_2">
+									<td>0分</td>
+									<td>5000元</td>
+									<td>0元</td>
+									<td>0笔</td>
+									<td class="user_last_td">10笔</td>
+								</tr>
+								<tr>
+									<td>还清笔数</td>
+									<td>借款总额</td>
+									<td>代还本息</td>
+									<td>逾期总额</td>
+									<td class="user_last_td">逾期笔数</td>
+								</tr>
+								<tr class="user_tr_2">
+									<td>1笔</td>
+									<td>18,202.00元</td>
+									<td>0元</td>
+									<td>11,165.00元</td>
+									<td class="user_last_td">5次</td>
+								</tr>
+							</table>
+						</div>
+						<!--审核信息-已审核-->
+						<div class="user_cre_exa"></div>
+					</div>
+					<!--内容4-投资记录-->
+					<div class="main_in" style="display:none">
+						<table class="inv_take" cellpadding="0" cellspacing="0">
+						<tr class="inv_first_tr">
+							<td>序号</td>
+							<td>投资人</td>
+							<td>年化利率</td>
+							<td>投资金额</td>
+							<td>投标方式</td>
+							<td class="inv_last_td">投资/申购时间</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>**</td>
+							<td>**%</td>
+							<td>00</td>
+							<td>自动投标</td>
+							<td class="inv_last_td">2015/01/01</td>
+						</tr>
+					</table>
+					</div>
+					<!--内容5-还款列表-->
+					<div class="main_in" style="display:none">
+						<table class="rep_list" cellpadding="0" cellspacing="0">
+						<tr class="rep_first_tr">
+							<td>序号</td>
+							<td>还款日期</td>
+							<td>还款金额</td>
+							<td>本金+利息</td>
+							<td class="rep_last_td">还款状态</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2015/01/09</td>
+							<td>￥00</td>
+							<td>￥00+￥00</td>
+							<td class="rep_last_td">待还款</td>
+						</tr>
+					</table>
+					</div>
+				</div>
+				<script>
+					$(".par_bottom .par_bottom_top dl dd").mouseover(function(){
+						$(".par_bottom .par_bottom_top dl dd").removeClass("sole_dd")
+						$(this).addClass("sole_dd");
+					var int=$(".par_bottom .par_bottom_top dl dd").index(this);
+						$(".par_bottom .main_in").stop(true,true).fadeOut("fast");
+						$(".par_bottom .main_in").stop(true,true).eq(int).slideDown("slow");
+					});
+				</script>
+			</div>
+		</div>
+		/*弹窗*/
+		<div class="int_butt" style="display:none">
+			<div class="butt_int_box">
+				<p class="int_box_top">
+					<span class="box_top_pro">系统提示</span>
+					<span class="box_top_close"></span>
+				</p>
+				<div class="int_box_bottom">
+					<p>您的投资金额：<span>100元</span></p>
+					<p>实际到期本息：<span>105.99元</span></p>
+					<p>确定购买吗？</p>
+					<div class="bot_bottom_but">
+						<span class="int_but_left">取消</span>
+						<span class="int_but_right">确定</span>
+					</div>
+				</div>
+			</div>
+			<div class="black_opacity"></div>
+			<script>
+					$(".butt_int_box .box_top_close").click(function(){
+						$(this).parent().parent().parent().hide("slow")
+					});
+					$(".butt_int_box .int_but_left").click(function(){
+						$(this).parent().parent().parent().parent().fadeOut()
+					});
+					$(".butt_int_box .int_but_right").click(function(){
+						$(this).parent().parent().parent().parent().slideUp("slow")
+					});
+					$(".black_opacity").click(function(){
+						$(this).parent().slideUp("slow");
+					})
+			</script>
+		</div>
+	</body>
+
+</html>
