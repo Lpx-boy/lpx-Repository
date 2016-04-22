@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+<style>
+	*{margin:0;padding:0;}
+    .banner_box{width:1920px;height:384px;overflow:hidden;position:relative}
+    div a{width:1920px;display:block;overflow:hidden;height:384px;float:left;cursor:pointer;}
+    div #pic_1{background:center no-repeat url(images/kj-ad-4.jpg)}
+    div #pic_2{background:center no-repeat url(images/kj-ad-5.jpg)}
+    div #pic_3{background:center no-repeat url(images/kj-ad-6.jpg)}
+   .float_1{float:left;width:5760px;height:384px;position:absolute;left:0;top:0px;}
+</style>
+<meta charset="utf-8">
+<title>普遍滑动效果</title>
+</head>
+<body>
+<div class="banner_box">
+	<div class="float_1">
+    	<a id="pic_1"></a>
+        <a id="pic_2"></a>
+        <a id="pic_3"></a>
+    </div>
+</div>    
+    <script>
+    	function time(){
+			$(".float_1").animate({left:-1920},350,function(){
+			$(".float_1").css({left:0});
+			$(".float_1 a:first").insertAfter(".float_1 a:last")	
+			})
+		}
+		var times=setInterval(time,2000);
+		$(".float_1").hover(function(){
+			clearInterval(times);
+		},function(){
+			times=setInterval(time,2000);
+		});
+    </script>
+</body>
+</html>

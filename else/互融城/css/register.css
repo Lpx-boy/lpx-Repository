@@ -1,0 +1,137 @@
+.register_header{width:100%;overflow:hidden;height:54px;background-image:url(../images/invest_header_span_bg.png);background-repeat:repeat-x;}
+.register_main{width:1100px;margin:0 auto;margin-bottom:15px;overflow:hidden;border:solid 1px #d0d0d0;border-radius:4px;}
+.register_main_center{width:1056px;margin:0 auto;overflow:hidden;margin-top:24px;}
+.register_main_top{width:100%;height:40px;overflow:Hidden;border-bottom:solid 1px #c9c9c9;margin-bottom:28px;}
+.register_main_top .register_text{line-height:28px;font-size:16px;border-bottom:solid 2px #ae7b42;padding-bottom:14px;float:left;}
+.register_main_top .register_text_right{width:160px;float:right;font-size:16px;}
+.register_main_top .register_text_right .r_t_r{float:left;display:block;margin-right:10px;line-height:28px;}
+.register_main_top .register_text_right a{float:left;display:block;width:78px;height:28px;line-height:28px;background:#fdbd34;color:white;text-align:center;border-radius:3px;text-shadow:1px 1px 1px black;box-shadow:1px 1px 6px rgba(0,0,0,0.4);}
+.register_main_top .register_text_right a:hover{cursor:pointer;color:#59360A;text-shadow:none;box-shadow:inset 1px 1px 6px rgba(0,0,0,0.4);}
+.register_main_pic{display:block;width:100%;height:61px;background:center no-repeat url(../images/register_main_pic_bg_1.png);margin-bottom:62px;}
+.register_main_bottom{width:1000px;margin:0 auto;overflow:Hidden;height:600px;background:right center no-repeat url(../images/rp.png);margin-bottom:90px;}
+.register_main_bottom ul{width:720px;overflow:hidden;}
+.register_main_bottom ul li{width:100%;display:block;line-height:62px;height:62px;overflow:hidden;}
+.register_main_bottom ul li em{float:left;color:red;display:block;font-style:normal;}
+.register_main_bottom ul li input{float:left;width:220px;height:30px;border:solid 1px #e3e3e3;border-radius:4px;margin-top:13px;}
+.register_main_bottom ul li p{float:left;font-size:12px;}
+.register_main_bottom .register_main_bottom_xx{float:left;margin-top:4px;margin-right:4px;}
+.register_main_bottom .register_main_bottom_text{display:block;float:left;width:70px;text-align:right;font-size:14px;color:black;letter-spacing:2px;margin-right:4px;}
+.register_main_bottom .register_main_bottom_text_first{display:block;float:right;width:70px;text-align:right;font-size:14px;color:black;letter-spacing:2px;margin-right:4px;}
+.register_main_bottom .ip_01{background:white left center no-repeat url(../images/register_main_bottom_icon_01.png);padding-left:38px;}
+.register_main_bottom .ip_02{background:white left center no-repeat url(../images/register_main_bottom_icon_02.png);padding-left:38px;}
+.register_main_bottom .ip_03{background:white left center no-repeat url(../images/register_main_bottom_icon_03.png);padding-left:38px;}
+.register_main_bottom .ip_04{background:white left center no-repeat url(../images/register_main_bottom_icon_04.png);padding-left:38px;}
+.register_main_bottom .ip_05{background:white left center no-repeat url(../images/register_main_bottom_icon_05.png);padding-left:38px;}
+.register_main_bottom .ip_06{background:white left center no-repeat url(../images/register_main_bottom_icon_04.png);padding-left:38px;}
+.register_main_bottom .ip_07{background:white left center no-repeat url(../images/register_main_bottom_icon_06.png);width:92px;padding-left:0px;}
+.register_main_bottom .pic_vfv{float:left;margin-top:14px;margin-left:10px;}
+.register_main_bottom .ip_08{background:white left center no-repeat url(../images/register_main_bottom_icon_07.png);width:92px;padding-left:0px;}
+.register_main_bottom .phone_vfv{width:142px;height:33px;margin-left:10px;cursor:pointer;}
+.register_main_bottom .phone_vfv:hover{color:#59360A;border-color:#59360A;}
+input:-webkit-input-placeholder { /* WebKit browsers */
+    color:    #d2d2d2;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #d2d2d2;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #d2d2d2;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #d2d2d2;
+}
+input::-webkit-input-placeholder {
+    color:    #d2d2d2;
+}
+input:-moz-placeholder {
+    color:    #d2d2d2;
+}
+.register_main_bottom .register_main_bottom_p_01{background:left center no-repeat url(../images/register_main_bottom_true.png);padding-left:16px;margin-left:2px;}
+.register_main_bottom .register_main_bottom_p_02{background:left center no-repeat url(../images/cr_icon.png);padding-left:16px;margin-left:2px;}
+.register_main_bottom .register_main_bottom_p_03{background:left center no-repeat url(../images/register_main_bottom_flase_icon.png);padding-left:16px;margin-left:2px;}
+.register_main_bottom .agree_l{width:200px;margin-left:100px;overflow:hidden;line-height:30px;height:30px;text-align:center;margin-bottom:20px;display:inline-block;}
+.register_main_bottom ul .agree_l a{flaot:left;font-size:12px;margin-left:-44px;color:Red}
+.register_main_bottom .agree{float:left;width:14px;height:14px;margin-top:9px;cursor:pointer;}
+.register_main_bottom .sub_l{width:278px;height:42px;line-height:42px;margin-left:36px;overflow:Hidden;text-align:center;}
+.register_main_bottom .submit_01{width:100%;height:42px;background:center no-repeat url(../images/submit_bg.png);border-radius:4px;margin-top:0px;border:none;color:white;font-size:16px;letter-spacing:10px;}
+.register_main_bottom .submit_01:hover{color:#59360A;cursor:pointer;background:rgba(253,189,52,0.85);border-radius:8px;padding-bottom:2px;}
+
+/* 扩展样式 */
+.Validform_box{
+	position:relative;
+	float:left;
+	vertical-align:top;
+}
+.Validform_inf,
+.Validform_inr,
+.Validform_suc,
+.Validform_ero{
+	display:none;
+	position:absolute;
+	width:250px;
+	margin:0 0 0 10px;
+	padding:6px;
+	border:1px solid #b9e3ff;
+	border-radius:2px;
+	line-height:23px;
+	background:#f3fbff;
+	z-index:0;
+}
+.Validform_inf{width:180px;z-index:1;margin-top:12px;}
+.Validform_ero{
+	width:180px;
+	border:1px solid #ffc7c7;
+	background:#ffecec;
+	margin-top:12px;
+}
+.Validform_suc{
+	margin:0 0 0 11px;
+	border:0;
+	background:none;
+}
+.Validform_box .arrow{
+	position:absolute;
+	top:11px;
+	left:-6px;
+	z-index:0;
+	width:12px;
+	height:12px;
+	line-height:12px;
+	overflow:hidden;
+	text-align:center;
+	color:#f6f6f6;
+}
+.Validform_box .arrow_bd{
+	top:10px;
+	z-index:1;
+	color:#b9e3ff;
+}
+.Validform_box .arrow_ir{
+	top:10px;
+	left:-5px;
+	z-index:1;
+	color:#f3fbff;
+}
+.Validform_box .Validform_ero .arrow_bd{color:#ffc7c7;}
+.Validform_box .Validform_ero .arrow_ir{color:#ffecec;}
+.Validform_box .Validform_tip,
+.Validform_box .Validform_checktip{
+	height:auto;
+	line-height:22px;
+	margin:0;
+	padding:0 0 0 20px;
+	color:#333;
+	background: url(../images/register_main_bottom_true.png) no-repeat 6px 6px;
+	font-size:12px;
+}
+.Validform_box .Validform_suc i{
+	display:none;
+	margin:0;
+}
+.Validform_box .Validform_checktip a{color:#0060a9;}
+.Validform_box .Validform_checktip a:hover{color:#f60;}
+.Validform_box .Validform_wrong{
+	white-space:normal;
+	background: url(../images/register_main_bottom_flase_icon.png) no-repeat 6px 6px;
+}
+.Validform_box .Validform_right{margin-top:8px;background:url(../images/cr_icon.png) no-repeat 0px 10px;}

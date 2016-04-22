@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+<script type="text/javascript"> 
+//怎么获取网页的高度 让页面一出来就滚动条在最底端 
+function myScroll() 
+{ 
+//前边是获取chrome等一般浏览器 如果获取不到就是ie了 就用ie的办法获取 
+var x=document.body.scrollTop||document.documentElement.scrollTop; 
+var timer=setInterval(function(){ 
+x=x-20; 
+if(x<20) 
+{ 
+x=0; 
+window.scrollTo(x,x); 
+clearInterval(timer); 
+} 
+window.scrollTo(x,x); 
+},"8"); 
+} 
+</script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/about_hp.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>公司证件</title>
+</head>
+<body>
+<!--top-->
+	<div class="header">
+    	<div class="header_center">
+    	<div class="header_left">
+			<a><div class="header_left_Left">
+            	<img src="images/header_icon_img_phone.png">
+                <span style="font-size:14px;">400-0696-189</span>
+            </div>
+            </a>
+            <div class="header_left_Right">
+            	<span class="gzwo">关注我们</span>
+                <span class="f_a" title="微信登录">
+                <!--微信-->
+	                <div class="h_l_r_w_x"></div>
+                </span>
+                <span class="t_a" title="QQ登录">
+                <!--QQ-->
+	            <div class="b_c_l_a_3_w_x">
+                     <div class="b_c_l_a_3_w_x_c">
+                          <a class="pic_1"></a>
+                          <a class="pic_2"></a>
+                          <a class="pic_3"></a>
+                          <a class="pic_4"></a>
+                     </div>
+                </div>
+                </span>
+            </div>
+<script>
+$(".header_left_Right .f_a").mouseover(function(){
+	$(".h_l_r_w_x").show();
+});
+$(".header_left_Right .f_a").mouseout(function(){
+	$(".h_l_r_w_x").hide();	
+});
+$(".header_left_Right .t_a").mouseover(function(){
+	$(".b_c_l_a_3_w_x").show();	
+});
+$(".header_left_Right .t_a").mouseout(function(){
+	$(".b_c_l_a_3_w_x").hide();
+});
+</script>
+        </div>
+<!--hot-->
+		<div class="header_hot">
+        	<img style="margin-top:6px;margin-left:20px;margin-right:8px;" src="images/header_icon_img_05.png">
+            <a title="手机上互融城">手机上互融城</a>
+            <img style="margin-top:4px;" src="images/header_icon_img_hot.gif">
+        </div>
+        <div class="header_right">
+        	<div class="header_right_Left">
+            	<img src="images/header_icon_img_03.png">
+                <a href="New_hand.html" title="新手注册">新手注册</a>
+            </div>
+            <div class="header_right_Right">
+            	<div class="header_right_Right_center">
+                    <img src="images/header_icon_img_04.png">
+                    <a href="user_login.html" title="登录">登录</a>
+                    <span class="header_right_Right_st">|</span>
+                    <a href="register.html" title="免费注册">免费注册</a>
+                </div>
+                <div class="header_right_Right_center_01">
+                    <span class="header_right_Right_st_01">欢迎您，<abbr class="x_sj" style="color:#ffab00;">XXX</abbr></span>
+                    <div class="header_right_Right_float">
+                        <ul>
+                            <li class="rc"><a>立即充值</a></li>
+                            <li class="ss"><a>资金统计</a></li>
+                            <li><a>我的投资</a></li>
+                            <li><a>回款计划</a></li>
+                            <li><a>投资记录</a></li>
+                            <li><a>我的回款</a></li>
+                            <li><a>还款安排</a></li>
+                            <li><a>借款记录</a></li>
+                            <li><a>退出</a></li>
+                        </ul>	
+                     </div>
+                 </div>
+<script>
+$(".header_right_Right_center_01").mouseover(function(){
+	$(".header_right_Right_center").hide();
+	$(".header_right_Right_float").show();	
+}).mouseout(function(){
+	$(".header_right_Right_float").hide();	
+})
+</script>
+            </div>
+        </div>
+        </div>
+    </div>
+   	<!--导航-->
+	<div class="nav">
+    	<div class="logo">
+        	<a class="l_o" href="index.html" title="互融城"></a>
+           	<div class="l_r">
+            	<div class="l_r_c">
+                	<img title="互融城获得上千万天使投资" src="images/l_r_1.jpg">
+                    <img title="常备4百万应急储备基金" src="images/l_r_2.jpg">
+                    <img title="房产证直接抵押在投资客户名下" src="images/l_r_3.jpg">
+                    <img title="专注房产抵押" src="images/l_r_4.jpg">
+                    <img title="心专注·心服务·更信赖" src="images/l_r_5.jpg">
+                </div>
+            </div>
+        </div>
+<script>
+function bd(){
+$(".l_r_c").animate({top:-58},1000,
+function(){
+	$(".l_r_c").css({top:0});
+	$(".l_r_c img:first").insertAfter($(".l_r_c img:last"));	
+});
+}
+var sp=setInterval(bd,2500);
+$(".l_r_c img").mouseover(function(){
+	clearInterval(sp);	
+}).mouseout(function(){
+	sp=setInterval(bd,2500);	
+});
+</script>
+        <ul class="nav_right">
+        	<li><a href="index.html">首页</a></li>
+            <li><a href="invest.html">我要投资</a></li>
+            <li><a href="loan_index.html">我要借款</a></li>
+            <li><a>团货学院</a></li>
+            <li><a href="user_login.html">我的账户</a></li>
+            <li><a href="about_hp.html">关于我们</a></li>
+        </ul>
+    </div>
+<!--公司证件--内容-->
+	<div class="about_header">
+        	<div class="about_header_center">你当前所在的位置:<a href="index.html" class="home">首页</a><span>&gt;</span>公司证件</div>
+        </div>
+<!--关于我们-首页-->
+	<div class="about_box">
+    	<div class="about_left">
+        	<div class="a_l_lis">
+            	<ul>
+                	<li><a href="about_hp.html">公司简介</a></li>
+                    <li class="a_l_lis_first a_l_lis_first_fx"><a href="about_zj.html">公司证件</a></li>
+                    <li><a href="about_em.html">公司环境</a></li>
+                    <li><a href="about_man.html">管理团队</a></li>
+                    <li><a href="about_pf.html">平台管理</a></li>
+                    <li><a href="about_state.html">资费说明</a></li>
+                    <li><a>法律保障</a></li>
+                    <li><a href="about_wo.html">联系我们</a></li>
+                </ul>
+            </div>
+<script>
+$(".a_l_lis li").mouseover(function(){
+	$(".a_l_lis li").removeClass("a_l_lis_first");
+	$(this).addClass("a_l_lis_first");	
+}).mouseout(function(){
+	$(".a_l_lis li").removeClass("a_l_lis_first");	
+});
+</script>
+        </div>
+        <div class="about_right">
+        	<div class="a_r_center">
+            	<div class="a_r_c_top">
+                	<h1>公司证件</h1>
+                </div>
+                <div class="a_r_c_f">
+                	<p>
+                        <img src="images/a_r_c_f_img_1.png">
+                        <img src="images/a_r_c_f_img_2.png">
+                    </p>
+                    <p>
+                        <img src="images/a_r_c_f_img_3.png">
+                        <img src="images/a_r_c_f_img_4.png">
+                    </p>
+                    <p>
+                    	<img src="images/a_r_c_f_img_5.png">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--bottom-->
+    <div class="bottom">
+    	<div class="bottom_top">
+			<dl>
+				<dt>
+                    <span>友情链接:</span>
+                     <a>网贷第三方</a>
+                     <a>网贷能量</a>
+                     <a>我要网贷</a>
+                     <a>网贷中国</a>
+                     <a>网贷之家</a>
+                     <a>p2p理财</a>
+                </dt>
+			</dl>
+        </div>
+    	<div class="bottom_center">
+        	<div class="bottom_center_left">
+                <dl>
+                	<dt>
+                    	<span>关于我们:</span>
+                        <a>新手任务</a>
+                        <a>帮助中心</a>
+                        <a>安全保障</a>
+                        <a>法律法规</a>
+                        <a>资费介绍</a>
+                        <a>理财公告</a>
+                        <a>合作机构</a>
+                    </dt>
+                </dl>
+                <dl>
+                	<dt>
+                        <span>关注我们:</span>
+                        <ul class="b_c_l_ul">
+                            <li class="b_c_l_a_1">
+                            	<a>微信</a>
+                                <div class="b_c_l_a_1_pic"></div>
+                            </li>
+                            <li class="b_c_l_a_2"><a>QQ</a></li>
+                            <li class="b_c_l_a_3">
+                            	<a>QQ群</a>
+                                <div class="b_c_l_a_3_w_x">
+                                	<div class="b_c_l_a_3_w_x_c">
+                                    	<a class="pic_1"></a>
+                                        <a class="pic_2"></a>
+                                        <a class="pic_3"></a>
+                                        <a class="pic_4"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="b_c_l_a_4"><a>新浪微博</a></li>
+                            <li class="b_c_l_a_5"><a>手机上互融城</a></li>
+                        </ul>
+<script>
+$(".bottom_center_left .b_c_l_a_1").mouseover(function(){
+	$(".bottom_center_left .b_c_l_a_1_pic").show();	
+}).mouseout(function(){
+	$(".bottom_center_left .b_c_l_a_1_pic").hide();	
+});
+$(".bottom_center_left .b_c_l_a_3").mouseover(function(){
+	$(".bottom_center_left .b_c_l_a_3_w_x").show();	
+}).mouseout(function(){
+	$(".bottom_center_left .b_c_l_a_3_w_x").hide();	
+});
+</script>
+                    </dt>
+                </dl>
+            </div>
+	            <div class="bottom_center_right">
+            	<span class="bottom_center_right_sp_01">客服热线</span>
+                <span class="bottom_center_right_sp_02">
+                	<img style="float:left;" src="images/bottom_phone.png">400-0696-189</span>
+                <span style="font-size:14px;">(工作时间:周一至周五8:30-18:00)</span>
+            </div>
+        </div>
+    </div>
+<!--foot-->
+	<div class="foot">
+    <div class="foot_center">
+    	<a>Copyright&copy;2014-2015 广东互融城网络信息服务有限公司版权所有粤ICP备15023015号</a><br>
+        <a>地址:东莞市南城区财津商务大厦1509(15楼09)</a>
+    </div>
+    </div>
+<!--float_window-->
+	<div class="float_window">
+    	<div class="f_w_a_1" style="background-color:#f3ddb7;">
+        	<div class="f_w_a_1_l">
+            	<div class="f_w_a_1_l_c">
+                	<div class="f_w_a_1_l_c_m">
+                    	<ul>
+                        	<span>QQ在线客服</span>
+                            <span class="im">在线资讯</span>
+                            <li><a>萱萱</a></li>
+                            <li><a>小熊</a></li>
+                            <li><a>阿玉</a></li>
+                            <li><a>小许</a></li>
+                            <li style="border:none;"><a>小林</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p onclick="$(this).parent().hide()">&gt;&gt;</p>
+            </div>   
+        </div>
+        <a class="f_w_a_2" href="help.html"></a>
+        <div class="f_w_a_3">
+        	<div class="f_w_a_3_win"></div>
+        </div>
+		<a class="f_w_a_4"></a>
+        <a onclick="myScroll()" class="f_w_a_5"></a>
+    </div>
+<script>
+$(".f_w_a_1").click(function(){
+	$(".f_w_a_1_l").animate({left:-135},500).show();
+})
+$(".f_w_a_1_l p").click(function(){
+	$(this).parent().hide(this);	
+})
+$(".f_w_a_3").mouseover(function(){
+	$(".f_w_a_3_win").show();	
+}).mouseout(function(){
+	$(".f_w_a_3_win").hide();	
+});
+</script>
+</body>
+</html>

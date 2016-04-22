@@ -1,0 +1,89 @@
+<script language="JavaScript1.2">
+grphcs=new Array(5) 
+
+//PRELOAD the involved images (extend or contract variables according to # of images used)
+Image0=new Image();
+Image0.src=grphcs[0]="photo/star0.gif"
+Image1=new Image();
+Image1.src=grphcs[1]="photo/star1.gif"
+Image2=new Image();
+Image2.src=grphcs[2]="photo/star2.gif"
+Image3=new Image();
+Image3.src=grphcs[3]="photo/star3.gif"
+Image4=new Image();
+Image4.src=grphcs[4]="photo/star4.gif"
+
+//SPECIFY number of images to randomly display concurrently from list above. Less the more efficient
+Amount=20; 
+Ypos=new Array();
+Xpos=new Array();
+Zpos=new Array();
+//SpeedX=new Array();
+//SpeedY=new Array();
+ScrXpos=new Array();
+ScrYpos=new Array();
+Speed=new Array();
+Size=new Array();
+Step=new Array();
+ns=(document.layers)?1:0;
+ie=document.all&&navigator.userAgent.indexOf("Opera")==-1
+
+if (ns){
+for (i = 0; i < Amount; i++){
+var P=Math.floor(Math.random()*grphcs.length);
+rndPic=grphcs[P];
+document.write("<LAYER NAME='sn"+i+"' LEFT=0 TOP=0><img src="+rndPic+"></LAYER>");
+} //end for
+} //end if
+else if (ie){ //IE
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i = 0; i < Amount; i++){
+document.write('<img id="si'+i+'" src="'+grphcs[Math.round((i+1)*(grphcs.length-1)/Amount)]+'"style="position:absolute;top:0px;left:0px">');
+}
+document.write('</div></div>');
+}
+
+//initialize star properties
+if (ie||ns){
+WinHeight=(ns)?window.innerHeight-20:window.document.body.clientHeight;
+WinWidth=(ns)?window.innerWidth-70:window.document.body.clientWidth;
+for (i=0; i < Amount; i++){
+Speed[i]=(i+1)*6/Amount+4; //speed range from 4 to 10
+Xpos[i] = (Math.random()*WinWidth-WinWidth/2)*(Amount-i/3)/Amount;
+Ypos[i] = (Math.random()*WinHeight-WinHeight/2)*(Amount-i/3)/Amount;
+Zpos[i] = Math.random()*900*(Amount-i/3)/Amount+100;
+}
+}
+
+function fly(){
+var WinHeight=(ns)?window.innerHeight-20:window.document.body.clientHeight;
+var WinWidth=(ns)?window.innerWidth-70:window.document.body.clientWidth;
+var hscrll=(ns)?window.pageYOffset:document.body.scrollTop;
+
+for (i=0; i < Amount; i++){
+Zpos[i]-=Speed[i];
+if (ScrXpos[i]>WinWidth || ScrXpos[i]<0 || ScrYpos[i]>WinHeight || ScrYpos[i]<0 || Zpos[i]<=0) { //generate new stars
+Speed[i]=(i+1)*6/Amount+4; //speed range from 4 to 10
+Xpos[i] = (Math.random()*WinWidth-WinWidth/2)*(Amount-i/3)/Amount;
+Ypos[i] = (Math.random()*WinHeight-WinHeight/2)*(Amount-i/3)/Amount;
+Zpos[i] = Math.random()*900*(Amount-i/3)/Amount+100;
+}
+ScrXpos[i]=Xpos[i]/Zpos[i]*100 + WinWidth/2;
+ScrYpos[i]=Ypos[i]/Zpos[i]*100 + WinHeight/2;
+
+if (ns){
+document.layers['sn'+i].left=ScrXpos[i];
+document.layers['sn'+i].top=ScrYpos[i]+hscrll;
+}
+else{ //IE
+eval("document.all.si"+i).style.left=ScrXpos[i];
+eval("document.all.si"+i).style.top=ScrYpos[i]+hscrll;
+}
+} //end for
+setTimeout('fly()',20);
+} //end fly
+
+if (ie||ns)
+window.onload=fly
+//-->
+</SCRIPT>

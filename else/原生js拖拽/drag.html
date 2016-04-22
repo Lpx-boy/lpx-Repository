@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>原生js拖拽效果</title>
+		<style type="text/css">
+			*{ margin:0; padding:0;}
+			#box{ position:absolute; left:0; top:0; width:100px; height:100px; background:#f60;}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<script type="text/javascript">
+			var oBox = document.getElementById('box');
+			oBox.onmousedown = function(e){
+				var oEvent =e || window.event,
+					disL = oEvent.clientX - oBox.offsetLeft,
+					disT = oEvent.clientY - oBox.offsetTop,
+					maxL = document.documentElement.clientWidth - oBox.offsetWidth,
+					maxT = document.documentElement.clientHeight - oBox.offsetHeight;
+					
+				document.onmousemove = function(e){
+					var oEvent = e || window.event,
+						disX = oEvent.clientX - disL,
+						disY = oEvent.clientY - disT;
+						
+						//console.log(disX);
+					if(disX <=0){ disX =0}
+					if(disY <=0){ disY =0}
+					if(disX >=maxL){ disX =maxL}
+					if(disY >=maxT){ disY =maxT}
+					oBox.style.left = disX+'px';
+					oBox.style.top = disY+'px';
+				}
+				
+			}
+			document.onmouseup=function(){
+			document.onmousemove=null;
+		}
+		</script>
+	</body>
+</html>

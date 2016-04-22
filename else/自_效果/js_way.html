@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript"> 
+		var obj = {
+		  bar: 1,
+		  foo: 2,
+		  baz: 3
+		};
+		obj.bar = undefined;
+		obj.foo = null;
+		delete obj.baz;
+		for (var i in obj) {
+		  if (obj.hasOwnProperty(i)) {
+		    console.log(i, '' + obj[i]);
+		  }
+		}
+	</script>
+</body>
+</html>

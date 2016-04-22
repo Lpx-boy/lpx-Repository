@@ -1,0 +1,147 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	color: #333;
+}
+
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var,
+i,
+s {
+	font-style: normal;
+	font-weight: normal
+}
+
+li {
+	list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal
+}
+
+input[type=checkbox] {
+	vertical-align: middle;
+	margin-top: -1px
+}
+
+body,
+button,
+select,
+textarea,
+input {
+	font-family: Microsoft YaHei, Tahoma, SimSun, Verdana;
+	font-size: 12px;
+	line-height: 1.5
+}
+
+button {
+	white-space: nowrap;
+	overflow: visible
+}
+
+a {
+	text-decoration: none;
+	outline: 0
+}
+
+a:hover {
+	text-decoration: none
+}
+
+a:active {
+	outline: 0
+}
+
+a:focus {
+	-moz-outline-style: none
+}
+
+em {
+	font-style: normal
+}
+
+
+
+.mpage {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	/*background: #006fb5*/
+}
+
+.anitOut {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1
+}
+
+.bgz {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: transparent url(../images/bgz.png) repeat left top;
+	opacity: .3;
+	filter: Alpha(opacity=30)
+}
+

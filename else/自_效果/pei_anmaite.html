@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+<style>
+*{font-family:"微软雅黑"}
+div,a,img,input,p,h1,h2,h3,h4,h5,ul,li,ol,dl,dd,dt,body{margin:0px;padding:0px;}
+a{text-decoration:none;}
+img{border:none;display:block;}
+.lei{width:150px;height:150px;overflow:hidden;position:absolute;left:50%;top:0px;margin-left:-75px;}
+.lei_1,.lei_3,.lei_5{width:100%;height:150px;background:#517C8D;}
+.lei_2,.lei_4,.lei_6{width:100%;height:150px;background:#B7E2F3;}
+</style>
+<meta charset="utf-8">
+<title>个人创意动画</title>
+</head>
+<body style="background:#B7E2F3">
+<div style="width:750px;margin:6% auto;height:600px;overflow:hidden;position:relative;">
+    <div class="lei" style="height:300px;">
+        <div class="lei_1" style="height:100%;display:none"></div>
+        <div class="lei_2" style="height:100%;"></div>
+    </div>
+    <div class="lei" style="top:150px;margin-left:-225px;">
+        <div class="lei_3" ></div>
+        <div class="lei_4" style="display:none"></div>
+    </div>
+    <div class="lei" style="top:150px;margin-left:75px;">
+        <div class="lei_3"></div>
+        <div class="lei_4" style="display:none"></div>
+    </div>
+    <div class="lei" style="top:300px;margin-left:-225px;">
+        <div class="lei_1" style="height:100%;display:none"></div>
+        <div class="lei_2" style="height:100%;"></div>
+    </div>
+    <div class="lei" style="top:300px;margin-left:75px;">
+        <div class="lei_1" style="height:100%;display:none"></div>
+        <div class="lei_2" style="height:100%;"></div>
+    </div>
+	<div class="lei" style="top:300px;margin-left:-375px;">
+        <div class="lei_5"></div>
+        <div class="lei_6" style="display:none"></div>
+    </div>
+    <div class="lei" style="height:300px;top:300px;margin-left:-75px;">
+        <div class="lei_5" style="height:100%"></div>
+        <div class="lei_6" style="height:100%;display:none"></div>
+    </div>
+    <div class="lei" style="top:300px;margin-left:225px;">
+        <div class="lei_5"></div>
+        <div class="lei_6" style="display:none"></div>
+    </div>
+    <div class="lei" style="top:150px;margin-left:-375px;">
+        <div class="lei_1" style="height:300px;display:none"></div>
+        <div class="lei_2" style="height:300px;"></div>
+    </div>
+    <div class="lei" style="top:150px;margin-left:225px;">
+        <div class="lei_1" style="height:300px;display:none"></div>
+        <div class="lei_2" style="height:300px;"></div>
+    </div>
+  <input id="s" type="submit" value="停止" style="position:absolute;right:0;bottom:0px;">
+</div>
+<script>
+function ddd(){
+	$(".lei_1").stop(true,true)
+	.animate({height:"toggle",opacity:"toggle"},"slow");
+	$(".lei_2").stop(true,true)
+	.animate({height:"toggle",opacity:"toggle"},"fast");
+	$(".lei_3").stop(true,true)
+	.animate({height:"toggle",opacity:"toggle"},"slow");
+	$(".lei_4").stop(true,true)
+	.animate({height:"toggle",opacity:"toggle"},"slow");
+	$(".lei_5").stop(true,true)
+	.animate({height:"toggle",opacity:"toggle"},"slow");
+	$(".lei_6").stop(true,true)
+	.animate({height:"toggle",opacity:"toggle"},"fast");
+};
+var Stop=setInterval(ddd,1000);
+$("#s").click(
+function(){
+	clearInterval(Stop);	
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+<style>
+*{font-family:"微软雅黑"}
+div,a,img,input,p,h1,h2,h3,h4,h5,ul,li,ol,dl,dd,dt{margin:0 auto;}
+a{text-decoration:none;}
+img{border:none;display:block;}
+.lei{width:100%;height:300px;overflow:hidden;margin:30px auto auto;background:rgba(0,0,0,0.5);position:relative;}
+.leiming{position:absolute;right:0;bottom:0px;}
+.lei_1{width:100%;height:20px;background:#006AA9;display:none}
+.lei_2{width:100%;height:40px;background:#0092FF;}
+</style>
+<meta charset="utf-8">
+<title>滑动特效</title>
+</head>
+<body style="background:rgba(129, 129, 129,1)">
+<div class="lei">
+	<div class="lei_1"></div>
+    <div class="lei_2"></div>
+    <input class="leiming" value="经过停止" type="submit">
+</div>
+<script>
+$(".leiming").hover(function(){
+	$(".lei_1").stop(true,true).slideToggle("slow");
+})/*.mouseout(function(){
+	$(".lei_1").stop(true,true).slideUp("fast");
+})*/
+/*var bb=setInterval(sd,1000);
+$(".leiming").click(function(){
+	clearInterval(bb);	
+});*/
+</script>
+</body>
+</html>

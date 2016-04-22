@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>仿腾讯相册图片切换</title>
+</head>
+<style>
+*{padding:0; margin:0; list-style:none;}
+
+.center{ width:450px; height:450px; background:#999; margin:40px auto 0 auto;}
+.center img{ float:left; width:150px; height:150px; cursor:pointer;}
+.popup{ position:fixed; background:rgba(0,0,0,0.4); bottom:0; top:0;left:0;right:0; display:none;}
+.show{ position:absolute; top:50px; left:50%; margin-left:-150px; margin-top:75px; display:none;}
+.big{ width:300px; height:300px;}
+.left{ position:absolute; top:125px; left:-50px; cursor:pointer;}
+.right{ position:absolute; top:125px; right:-50px; cursor:pointer;}
+</style>
+
+<body>
+
+<div class="center">
+	<img src="images/big_1.jpg"/>
+	<img src="images/big_2.jpg"/>
+	<img src="images/big_3.jpg"/>
+	<img src="images/big_4.jpg"/>
+	<img src="images/big_5.jpg"/>
+	<img src="images/big_6.jpg"/>
+	<img src="images/big_7.jpg"/>
+	<img src="images/big_8.jpg"/>
+	<img src="images/big_9.jpg"/>
+</div>
+
+<div class="popup"></div>
+
+<div class="show">
+	<img class="big" src="images/big_1.jpg"/>
+	<img class="left" src="images/left.png"/>
+	<img class="right" src="images/right.png"/>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var bigImg='';
+	var _index=0;
+	$(".popup").click(function(){
+		$(".show").hide();
+		$(this).hide();
+	});
+	$(".center img").click(function(){
+		$(".popup").show();
+		$(".show").show();
+		bigImg=$(this).attr("src");//获取点击图片的地址
+		//alert(bigImg);
+		$(".show img.big").attr("src",bigImg); //更换大图的图片地址
+		_index=$(this).index();//保存图片的序列号
+		//alert(_index);
+	});
+	$(".right").click(function(){
+		_index++; //序列号加1 _index+1
+		if(_index>8){_index=0};
+		bigImg=$(".center img").eq(_index).attr("src");
+		$(".show img.big").attr("src",bigImg);
+	});
+	$(".left").click(function(){
+		_index--; //序列号加1 _index+1
+		if(_index<-1){_index=8};
+		bigImg=$(".center img").eq(_index).attr("src");
+		$(".show img.big").attr("src",bigImg);
+	});
+})
+</script>
+
+</body>
+</html>

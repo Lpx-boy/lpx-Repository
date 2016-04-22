@@ -1,0 +1,62 @@
+
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    ul,li{
+    	list-style: none;
+    }
+    .box{
+    	width: 1055px;
+    	height: 384px;
+    	margin: 100px auto;
+    	overflow: hidden;
+    	position: relative;
+      padding-top: 64px;
+    }
+
+    .box .box-con{
+    	width: 1055px;
+    	height: 384px;
+    	position: relative;
+
+    }
+
+    .box .box-con li{
+	    width: 320px;
+	    height: 188px;
+	    background: #fff;
+	    position: absolute;
+	    left: 888px;
+	    top: 66px;
+	    z-index: 30;
+	       
+    }
+
+    .box .box-con li img{
+    	cursor: pointer;
+    	width: 100%;
+    }
+
+
+   .box span{
+   	width: 138px;
+   	height: 238px;
+   	display: block;
+   	position: absolute;
+   	top: 98px;
+   	z-index: 51;
+   	cursor: pointer;
+   }
+
+   .prev-3d{
+   	left: 0;
+    background:center no-repeat url("./img/left.png");
+   }
+   .next-3d{
+   right: 0;
+   background:center no-repeat url("./img/right.png");
+
+   }
+
+	

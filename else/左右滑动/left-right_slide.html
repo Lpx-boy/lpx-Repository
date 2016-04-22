@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<meta name="Keywords" content="SuperSlide,jQuery-mm图片滚动">
+<meta name="Description" content="SuperSlide,jQuery-mm图片滚动">
+<title>SuperSlide - mm图片滚动</title>
+<link rel="stylesheet" type="text/css" href="left-right.css">
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+	<div class="ladyScroll">
+			<a class="prev" href="javascript:void(0)"></a>
+			<div class="scrollWrap">
+					<div class="dlList">
+							<dl>
+							  <dt><a><img src="images/1.jpg"></a><span></span></dt>
+							  <dd><a>甜美展现得淋漓尽致</a></dd>
+							</dl>
+
+							<dl>
+							  <dt><a><img src="images/2.jpg"></a><span></span></dt>
+							  <dd><a>回眸一笑让人着迷</a></dd>
+							</dl>
+
+							<dl>
+							  <dt><a><img src="images/3.jpg"></a><span></span></dt>
+							  <dd><a>阔腿裤遮住小象腿</a></dd>
+							</dl>
+
+							<dl>
+							  <dt><a><img src="images/4.jpg"></a><span></span></dt>
+							  <dd><a>小礼服可爱小女人</a></dd>
+							</dl>
+
+							<dl>
+							  <dt><a><img src="images/5.jpg"></a><span></span></dt>
+							  <dd><a>帅气鞋和包很相搭</a></dd>
+							</dl>
+
+							<dl>
+							  <dt><a><img src="images/6.jpg"></a><span></span></dt>
+							  <dd><a>超级经典短打装扮</a></dd>
+							</dl>
+					</div>
+			</div>
+			<a class="next" href="javascript:void(0)"></a>
+	</div>
+	<script type="text/javascript">
+	jQuery(".ladyScroll").slide({ mainCell:".dlList", effect:"leftLoop",vis:3, autoPlay:true});
+	</script>
+
+
+
+</body>
+</html>

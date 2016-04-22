@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+<style>
+</style>
+<meta charset="utf-8">
+<title>核心</title>
+</head>
+<body>
+<img src="1.jpg">
+<img src="2.jpg">
+<ul></ul>
+<ul>
+	<li id="foo">foo</li>
+	<li id="bar">bar</li>
+    <li id="baz">baz</li>
+</ul>
+<div class="trigger">Trigger</div>
+<div class="result"></div>
+<div class="log"></div>
+
+<script>
+$(document).ajaxComplete(function() {
+ $( ".log" ).text( "Triggered ajaxComplete handler." );
+});
+$( ".trigger" ).click(function() {
+ $( ".result" ).load( "ajax/test.html" );
+});
+$(document).ajaxComplete(function(event, xhr, settings) {
+ if ( settings.url === "ajax/test.html" ) {
+ $( ".log" ).text( "Triggered ajaxComplete handler. The result is " +
+ xhr.responseHTML );
+ }
+});
+			
+			
+
+
+
+document.title=$("img").length;
+$("ul")
+	.append("<li>"+$("ul").selector+"</li>")
+	.append("<li>"+$("ul li").selector+"</li>")
+	.append("<li>"+$("div#foo ul:not{[class]}").selector+"</li>")
+	.append("<li>"+$("ul").context+"</li>")
+	.append("<li>"+$("ul",document.body).context.nodeName+"</li>")
+
+var arr=new Array(3)
+arr[0]="George"
+arr[1]="john"
+arr[2]="Thomas"
+document.write(arr+"<br/>")
+document.write(arr.reverse())
+
+$("ul li").index(document.getElementById('bar');//1.传递一个DOM对象，返回这个对象在原先集合中的索引位置
+$("ul li").index($('#bar'));//1，传递一个jQuery对象
+
+$('li').index($('li:gt(0)')); //1，传递一组jQuery对象，返回这个对象中第一个元素在原先集合中的索引位置
+$('#bar').index('li'); //1，传递一个选择器，返回#bar在所有li中的做引位置
+$('#bar').index(); //1，不传递参数，返回这个元素在同辈中的索引位置。
+</script>
+</body>
+</html>

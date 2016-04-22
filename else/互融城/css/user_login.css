@@ -1,0 +1,24 @@
+
+.user_login{width:100%;height:500px;overflow:hidden;background-image:url(../images/user_login_bg.png);background-repeat:no-repeat;background-position:center;border-top:solid 1px #e8e8e8;border-bottom:solid 1px #e8e8e8;}
+.user_login_center{width:1100px;margin:0 auto;height:500px;position:relative;}
+.user_login_right_window{position:absolute;right:40px;top:66px;width:360px;height:370px;float:right;border:solid 1px #f3f3f3;background:white;border-radius:4px;}
+.user_login_right_window_top{width:100%;line-height:42px;border-bottom:solid 1px #c9c9c9;}
+.user_login_right_window_top span{font-family:"微软雅黑";font-size:20px;margin-left:20px;}
+.user_login_right_window_bottom{width:239px;margin:0 auto;overflow:hidden;margin-top:30px;}
+.user_login_right_window_bottom dl{width:100%;overflow:hidden;}
+.user_login_right_window_bottom dl dt{border:solid 1px #c9c9c9;border-radius:4px;height:33px;display:block;margin-bottom:20px;}
+.user_login_right_window_bottom dl dt input{height:31px;padding-left:33px;background-repeat:no-repeat;background-position:left center;}
+.user_login_right_window_bottom .user_login_input_first{background: no-repeat url(../images/user_login_right_window_bottom_input_img_01.png);}
+.user_login_right_window_bottom .user_login_input_two{background: no-repeat url(../images/user_login_right_window_bottom_input_img_02.png);}
+.po{width:100%;line-height:30px;font-size:14px;font-family:"微软雅黑";overflow:hidden;margin-bottom:10px;}
+.po input{cursor:pointer;float:left;width:20px;height:20px;margin-top:5px;}
+.po span{float:left;}
+.po a{float:right;color:Red;cursor:pointer;}
+.po_button{width:100%;height:43px;line-height:43px;overflow:hidden;clear:left;text-align:center;background-image:url(../images/po_button_bg.png);background-repeat:no-repeat;background-position:center;}
+.po_button input{width:100%;line-height:44px;cursor:pointer;color:white;letter-spacing:10px;font-size:14px;font-family:"微软雅黑";border-radius:8px;background:none;}
+.po_button input:hover{color:#59360A;background:rgba(255,255,255,0.2);border-radius:8px;}
+.no_po{float:right;line-height:40px;font-size:14px;font-family:"微软雅黑";}
+.no_po a{color:red;cursor:pointer;}
+.no_po a:hover{text-decoration:underline;}
+.user_login_right_window_bottom dl dd{display:block;}
+.user_login_right_window_bottom .prompt_text{height:40px;line-height:40px;width:100%;font-size:14px;background:left center no-repeat url(../images/register_main_bottom_true.png);padding-left:20px;color:red;}

@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-size:12px;
+}
+.plan_tg {
+	width:1003px;
+	height:184px;
+	margin:18px auto;
+	position:relative;
+	border:1px solid #e2e2e2;
+	background:#fff;
+	padding-top:10px;
+}
+.plan_title {
+	width:127px;
+	height:37px;
+	background:url(../images/plan_sj.png) no-repeat;
+	line-height:37px;
+	text-align:center;
+	color:#fff;
+	font-family:"微软", "微软雅黑";
+	position:absolute;
+	left:450px;
+	top:-6px;
+	font-size:16px;
+}
+ul, li {
+	list-style:none;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.blk_18 {
+	overflow:hidden;
+	zoom:1;
+	width:1003px;
+}
+.blk_18 .pcont {
+	width:903px;
+	float:left;
+	overflow:hidden;
+}
+.blk_18 .ScrCont {
+	width:32766px;
+	zoom:1;
+}
+.blk_18 #List1_1, .blk_18 #List2_1 {
+	float:left;
+}
+.blk_18 .LeftBotton, .blk_18 .RightBotton {
+	width:35px;
+	height:98px;
+	float:left;
+	background:url(../images/ax.png) no-repeat;
+	margin-top:35px;
+}
+.blk_18 .LeftBotton {
+	background-position: 0 0;
+	margin-right:15px;
+}
+.blk_18 .RightBotton {
+	background-position: 0 -98px;
+	margin-left:15px;
+}
+.blk_18 .LeftBotton:hover {
+	background-position: -35px 0;
+}
+.blk_18 .RightBotton:hover {
+	background-position: -35px -98px;
+}
+.ScrCont .p1 {
+	width:445px;
+	height:184px;
+	float:left;
+	padding-right:10px;
+}
+.ScrCont .p1 .left {
+	width:193px;
+	height:159px;
+	padding:2px;
+	border:1px solid #d4d4d4;
+}
+.ScrCont .p1 .right {
+	width:235px;
+	height:auto;
+	float:right;
+}
+.ScrCont .p1 .right p {
+	color:#666;
+	text-align:left;
+	line-height:200%;
+	padding-top:5px;
+}
+.ScrCont .p1 .right p b {
+	font-family:"微软", "微软雅黑";
+	font-size:16px;
+	color:#3a4145;
+	text-align:left;
+}
+.ScrCont .p1 .right p a {
+	color:#bbbaba;
+}
+.ScrCont .p1 .right p a:hover {
+	color:#666;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

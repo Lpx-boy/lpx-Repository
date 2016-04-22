@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/user_login.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>用户登录</title>
+</head>
+<body>
+<!--top-->
+	<div class="header">
+    	<div class="header_center">
+    	<div class="header_left">
+			<a><div class="header_left_Left">
+            	<img src="images/header_icon_img_phone.png">
+                <span style="font-size:14px;">400-0696-189</span>
+            </div>
+            </a>
+            <div class="header_left_Right">
+            	<span class="gzwo">关注我们</span>
+                <span class="f_a" title="微信登录">
+                <!--微信-->
+	                <div class="h_l_r_w_x"></div>
+                </span>
+                <span class="t_a" title="QQ登录">
+                <!--QQ-->
+	            <div class="b_c_l_a_3_w_x">
+                     <div class="b_c_l_a_3_w_x_c">
+                          <a class="pic_1"></a>
+                          <a class="pic_2"></a>
+                          <a class="pic_3"></a>
+                          <a class="pic_4"></a>
+                     </div>
+                </div>
+                </span>
+            </div>
+<script>
+$(".header_left_Right .f_a").mouseover(function(){
+	$(".h_l_r_w_x").show();
+});
+$(".header_left_Right .f_a").mouseout(function(){
+	$(".h_l_r_w_x").hide();	
+});
+$(".header_left_Right .t_a").mouseover(function(){
+	$(".b_c_l_a_3_w_x").show();	
+});
+$(".header_left_Right .t_a").mouseout(function(){
+	$(".b_c_l_a_3_w_x").hide();
+});
+</script>
+        </div>
+<!--hot-->
+		<div class="header_hot">
+        	<img style="margin-top:6px;margin-left:20px;margin-right:8px;" src="images/header_icon_img_05.png">
+            <a title="手机上互融城">手机上互融城</a>
+            <img style="margin-top:4px;" src="images/header_icon_img_hot.gif">
+        </div>
+        <div class="header_right">
+        	<div class="header_right_Left">
+            	<img src="images/header_icon_img_03.png">
+                <a href="New_hand.html" title="新手注册">新手注册</a>
+            </div>
+            <div class="header_right_Right">
+            	<div class="header_right_Right_center">
+                    <img src="images/header_icon_img_04.png">
+                    <a href="user_login.html" title="登录">登录</a>
+                    <span class="header_right_Right_st">|</span>
+                    <a href="register.html" title="免费注册">免费注册</a>
+                </div>
+                <div class="header_right_Right_center_01">
+                    <span class="header_right_Right_st_01">欢迎您，<abbr class="x_sj" style="color:#ffab00;">XXX</abbr></span>
+                    <div class="header_right_Right_float">
+                        <ul>
+                            <li class="rc"><a>立即充值</a></li>
+                            <li class="ss"><a>资金统计</a></li>
+                            <li><a>我的投资</a></li>
+                            <li><a>回款计划</a></li>
+                            <li><a>投资记录</a></li>
+                            <li><a>我的回款</a></li>
+                            <li><a>还款安排</a></li>
+                            <li><a>借款记录</a></li>
+                            <li><a>退出</a></li>
+                        </ul>	
+                     </div>
+                 </div>
+<script>
+$(".header_right_Right_center_01").mouseover(function(){
+	$(".header_right_Right_center").hide();
+	$(".header_right_Right_float").show();	
+}).mouseout(function(){
+	$(".header_right_Right_float").hide();	
+})
+</script>
+            </div>
+        </div>
+        </div>
+    </div>
+   	<!--导航-->
+	<div class="nav">
+    	<div class="logo">
+        	<a class="l_o" href="index.html" title="互融城"></a>
+           	<div class="l_r">
+            	<div class="l_r_c">
+                	<img title="互融城获得上千万天使投资" src="images/l_r_1.jpg">
+                    <img title="常备4百万应急储备基金" src="images/l_r_2.jpg">
+                    <img title="房产证直接抵押在投资客户名下" src="images/l_r_3.jpg">
+                    <img title="专注房产抵押" src="images/l_r_4.jpg">
+                    <img title="心专注·心服务·更信赖" src="images/l_r_5.jpg">
+                </div>
+            </div>
+        </div>
+<script>
+function bd(){
+$(".l_r_c").animate({top:-58},1000,
+function(){
+	$(".l_r_c").css({top:0});
+	$(".l_r_c img:first").insertAfter($(".l_r_c img:last"));	
+});
+}
+var sp=setInterval(bd,2500);
+$(".l_r_c img").mouseover(function(){
+	clearInterval(sp);	
+}).mouseout(function(){
+	sp=setInterval(bd,2500);	
+});
+</script>
+        <ul class="nav_right">
+        	<li><a href="index.html">首页</a></li>
+            <li><a href="invest.html">我要投资</a></li>
+            <li><a href="loan_index.html">我要借款</a></li>
+            <li><a>团货学院</a></li>
+            <li><a href="user_login.html">我的账户</a></li>
+            <li><a href="about_hp.html">关于我们</a></li>
+        </ul>
+    </div>
+<!--用户登录中间-->
+	<div class="user_login">
+    <div class="user_login_center">
+    	<div class="user_login_right_window">
+        	<div class="user_login_right_window_top"><span>用户登录</span></div>
+            <div class="user_login_right_window_bottom">
+            	<dl>
+                	<dd class="prompt_text">
+                    	<p>请您输入用户名！</p>
+                        <p>请您输入登录密码！</p>
+                    </dd>
+                	<dt><input class="user_login_input_first" type="text" placeholder="输入用户名"></dt>
+                    <dt><input class="user_login_input_two" type="text" placeholder="输入密码"></dt>
+                    <dd class="po">
+                    	<input type="checkbox">
+                        <span>记住帐号</span>
+                        <a>忘记密码？</a>
+                    </dd>
+                    <dd class="po_button"><input type="submit" value="登录"></dd>
+                    <dd class="no_po">没有帐号？<a href="register.html">免费注册</a></dd>
+                </dl>
+            </div>
+<script>
+$(".prompt_text").hide();
+$(".prompt_text p").hide();
+$(".user_login_right_window_bottom .user_login_input_first").click(function(){
+	$(".prompt_text").show();
+	$(".prompt_text p").hide();
+	$(".prompt_text p").eq(0).show();	
+});
+$(".user_login_right_window_bottom .user_login_input_two").click(function(){
+	$(".prompt_text").show();
+	$(".prompt_text p").hide();
+	$(".prompt_text p").eq(1).show();	
+});
+</script>
+        </div>
+    </div>
+    </div>
+<!--bottom-->
+    <div class="bottom">
+    	<div class="bottom_top">
+			<dl>
+				<dt>
+                    <span>友情链接:</span>
+                     <a>网贷第三方</a>
+                     <a>网贷能量</a>
+                     <a>我要网贷</a>
+                     <a>网贷中国</a>
+                     <a>网贷之家</a>
+                     <a>p2p理财</a>
+                </dt>
+			</dl>
+        </div>
+    	<div class="bottom_center">
+        	<div class="bottom_center_left">
+                <dl>
+                	<dt>
+                    	<span>关于我们:</span>
+                        <a>新手任务</a>
+                        <a>帮助中心</a>
+                        <a>安全保障</a>
+                        <a>法律法规</a>
+                        <a>资费介绍</a>
+                        <a>理财公告</a>
+                        <a>合作机构</a>
+                    </dt>
+                </dl>
+                <dl>
+                	<dt>
+                        <span>关注我们:</span>
+                        <ul class="b_c_l_ul">
+                            <li class="b_c_l_a_1">
+                            	<a>微信</a>
+                                <div class="b_c_l_a_1_pic"></div>
+                            </li>
+                            <li class="b_c_l_a_2"><a>QQ</a></li>
+                            <li class="b_c_l_a_3">
+                            	<a>QQ群</a>
+                                <div class="b_c_l_a_3_w_x">
+                                	<div class="b_c_l_a_3_w_x_c">
+                                    	<a class="pic_1"></a>
+                                        <a class="pic_2"></a>
+                                        <a class="pic_3"></a>
+                                        <a class="pic_4"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="b_c_l_a_4"><a>新浪微博</a></li>
+                            <li class="b_c_l_a_5"><a>手机上互融城</a></li>
+                        </ul>
+<script>
+$(".bottom_center_left .b_c_l_a_1").mouseover(function(){
+	$(".bottom_center_left .b_c_l_a_1_pic").show();	
+}).mouseout(function(){
+	$(".bottom_center_left .b_c_l_a_1_pic").hide();	
+});
+$(".bottom_center_left .b_c_l_a_3").mouseover(function(){
+	$(".bottom_center_left .b_c_l_a_3_w_x").show();	
+}).mouseout(function(){
+	$(".bottom_center_left .b_c_l_a_3_w_x").hide();	
+});
+</script>
+                    </dt>
+                </dl>
+            </div>
+	            <div class="bottom_center_right">
+            	<span class="bottom_center_right_sp_01">客服热线</span>
+                <span class="bottom_center_right_sp_02">
+                	<img style="float:left;" src="images/bottom_phone.png">400-0696-189</span>
+                <span style="font-size:14px;">(工作时间:周一至周五8:30-18:00)</span>
+            </div>
+        </div>
+    </div>
+<!--foot-->
+	<div class="foot">
+    <div class="foot_center">
+    	<a>Copyright&copy;2014-2015 广东互融城网络信息服务有限公司版权所有粤ICP备15023015号</a><br>
+        <a>地址:东莞市南城区财津商务大厦1509(15楼09)</a>
+    </div>
+    </div>
+</body>
+</html>

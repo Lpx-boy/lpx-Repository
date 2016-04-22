@@ -1,0 +1,49 @@
+@charset "utf-8";/* margin */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,img,form,applet,fieldset,legend,button,input,textarea,th,table,tr,td{margin:0;padding:0;border:none;}
+
+/* body */
+body{font-family:"微软雅黑";font-size:12px;color:#fff;position:relative;background:#fff;}
+body,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,p{-webkit-text-size-adjust:none}
+
+/* img */
+img{padding:0;margin:0;vertical-align:top;border:none}
+
+/* div */
+li,ul{outside:none;list-style:none;margin:0 auto;padding:0 auto;display:block;font-family:"Vrinda";-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.clear{clear:both;height:0;width:100%;}
+span,b,i,a,:after,:before{-webkit-transition:all 0.5s;}
+
+/* font */
+a{color:#fff;text-decoration:none;}
+a:hover,a:active,a:focus{text-decoration:none;}
+i{font-style:normal;}
+
+.board{width:900px;height:630px;margin:0 auto;padding:0 auto;margin-top:100px;background:rgb(180,160,140);border-radius:35px;position:relative;box-shadow:0px 5px 6px rgb(160,160,160);background:-webkit-linear-gradient(60deg,rgba(210,190,165,1) 25%,rgba(250,235,217,1));}
+.board:before{content:'';display:block;width:1126px;height:15px;background:rgb(210,210,210);border-radius:0px 0px 4px 4px;border-top-left-radius:190px 10px;border-top-right-radius:190px 10px;position:absolute;top:-20px;margin-left:-563px;left:50%;border-bottom:2px solid #b9a38e;background:-webkit-linear-gradient(top,rgb(210,190,165) 50%,rgb(250,235,217));z-index:999;}
+.blackbar{width:700px;height:12px;position:absolute;left:50%;margin-left:-350px;top:-6px;border-radius:3px;border:1px solid #84715e;border-top:none;background:-webkit-linear-gradient(top,rgb(30,30,30) ,rgb(60,60,60) 35%,rgb(100,100,100) 50%,rgb(30,30,30) 65%);background:-linear-gradient(top,rgb(30,30,30) ,rgb(60,60,60) 35%,rgb(100,100,100) 50%,rgb(30,30,30) 65%);}
+.horn{width:694px;height:30px;position:absolute;top:17px;left:50%;margin-left:-347px;overflow:hidden;}
+.horn ul{width:696px;height:32px;margin:-2px 0 0 -2px;float:left;}
+.horn li{width:2px;height:2px;background:#c4b098;float:left;margin:2px 0 0 2px;}
+.keyboard{width:890px;height:346px;margin:56px 5px 0 5px;float:left;border-radius:10px;border:1px solid rgb(190,173,148);background:rgba(234,216,194,1);box-shadow:2px 0px 2px rgb(192,172,147) inset,-2px 2px 3px rgb(192,172,147) inset,1px -0px 0px rgb(192,172,147) inset,0px -2px 3px rgb(213,193,168) inset;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.keyboard ul{width:880px;margin-top:8px;padding-left:11px;position:relative;float:left;/* border:2px solid black;*/}
+.keyboard li{width:54px;height:54px;float:left;margin-right:5px;margin-bottom:5px;background:rgb(30,30,30);color:rgb(200,200,200);text-align:center;line-height:52px;font-size:14px;border-radius:4px;border:1px solid rgb(70,70,70);box-shadow:1px 0px 0px rgb(0,0,0),0px 1px 0px rgb(0,0,0),-1px 0px 0px rgb(0,0,0),0px -1px 0px rgb(0,0,0);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;position:relative;}
+.keyboard li:nth-child(1){width:86px;height:23px;line-height:22px;text-indent:1em;text-align:left;}
+.keyboard li:nth-child(2),.keyboard li:nth-child(3),.keyboard li:nth-child(4),.keyboard li:nth-child(5),.keyboard li:nth-child(6),.keyboard li:nth-child(7),.keyboard li:nth-child(8),.keyboard li:nth-child(9),.keyboard li:nth-child(10),.keyboard li:nth-child(11),.keyboard li:nth-child(12),.keyboard li:nth-child(13),.keyboard li:nth-child(14){width:53px;height:23px;line-height:23px;}
+
+.keyboard li:nth-child(15),.keyboard li:nth-child(16),.keyboard li:nth-child(17),.keyboard li:nth-child(18),.keyboard li:nth-child(19),.keyboard li:nth-child(20),.keyboard li:nth-child(21),.keyboard li:nth-child(22),.keyboard li:nth-child(23),.keyboard li:nth-child(24),.keyboard li:nth-child(25),.keyboard li:nth-child(26),.keyboard li:nth-child(27),.keyboard li:nth-child(40),.keyboard li:nth-child(41),.keyboard li:nth-child(42),.keyboard li:nth-child(53),.keyboard li:nth-child(54),.keyboard li:nth-child(64),.keyboard li:nth-child(65),.keyboard li:nth-child(66){padding:7px 0;height:40px;}
+
+.keyboard li:nth-child(15) span,.keyboard li:nth-child(16) span,.keyboard li:nth-child(17) span,.keyboard li:nth-child(18) span,.keyboard li:nth-child(19) span,.keyboard li:nth-child(20) span,.keyboard li:nth-child(21) span,.keyboard li:nth-child(22) span,.keyboard li:nth-child(23) span,.keyboard li:nth-child(24) span,.keyboard li:nth-child(25) span,.keyboard li:nth-child(26) span,.keyboard li:nth-child(27) span,.keyboard li:nth-child(40) span,.keyboard li:nth-child(41) span,.keyboard li:nth-child(42) span,.keyboard li:nth-child(53) span,.keyboard li:nth-child(54) span,.keyboard li:nth-child(64) span,.keyboard li:nth-child(65) span,.keyboard li:nth-child(66) span{line-height:20px;height:20px;width:100%;float:left;}
+.keyboard li:nth-child(28) span,.keyboard li:nth-child(55) span,.keyboard li:nth-child(67) span{line-height:14px;margin-top:35px;float:right;margin-right:8px;}
+.keyboard li:nth-child(29) span,.keyboard li:nth-child(43) span,.keyboard li:nth-child(56) span,.keyboard li:nth-child(68) span,.keyboard li:nth-child(69) span,.keyboard li:nth-child(70) span,.keyboard li:nth-child(71) span,.keyboard li:nth-child(73) span,.keyboard li:nth-child(74) span{line-height:14px;margin-top:35px;float:left;text-indent:8px;}
+.keyboard li:nth-child(28),.keyboard li:nth-child(29){width:73px;}
+.keyboard li:nth-child(43),.keyboard li:nth-child(55){width:94px;}
+.keyboard li:nth-child(43) i{position:absolute;top:5px;left:5px;width:6px;height:6px;background:#fff;border-radius:3px;}
+.keyboard li:nth-child(55) i,.keyboard li:nth-child(70) i{position:absolute;right:8px;top:5px;font-size:12px;line-height:12px;}
+.keyboard li:nth-child(74) i{position:absolute;left:8px;top:5px;font-size:12px;line-height:12px;}
+.keyboard li:nth-child(56){width:124px;}
+.keyboard li:nth-child(67){width:125px;}
+.keyboard li:nth-child(71),.keyboard li:nth-child(73){width:70px;}
+.keyboard li:nth-child(72){width:285px;}
+.keyboard li:nth-child(76),.keyboard li:nth-child(78){height:25px;line-height:25px;}
+.keyboard li:nth-child(78){position:absolute;bottom:0;right:68px;}
+.touch{position:absolute;width:360px;height:202px;border:1px solid #c9b59d;bottom:10px;left:50%;margin-left:-180px;border-radius:8px;background:-webkit-linear-gradient(60deg,rgba(220,200,176,1) 25%,rgba(224,206,182,1));box-shadow:2px 0px 2px rgb(192,172,147) inset,-2px 1px 2px rgb(192,172,147) inset,1px -0px 0px rgb(192,172,147) inset,0px -1px 2px rgb(213,193,168) inset;}

@@ -1,0 +1,151 @@
+/*header*/
+.invest_header{width:100%;overflow:hidden;height:54px;background-image:url(../images/invest_header_span_bg.png);background-repeat:repeat-x;}
+.invest_header_center{width:1100px;margin:0px auto;display:block;line-height:54px;overflow:hidden;font-size:12px;font-family:"微软雅黑";}
+.invest_header_center a{color:black;}
+/*help--帮助中心*/
+.help{width:1100px;margin:0px auto;overflow:Hidden;margin-bottom:10px;}
+/*左边*/
+.help_left{width:204px;overflow:Hidden;float:left;border:solid 2px #e5e5e5;}
+
+/*新手指南*/
+.lis_01{overflow:hidden;border-bottom:solid 2px #e5e5e5;}
+.lis_01 dl{width:100%;overflow:hidden;}
+.lis_01 dl dt{font-weight:bold;font-size:16px;font-family:"微软雅黑";display:block;text-align:center;line-height:42px;border-bottom:solid 2px #e5e5e5;background-image:url(../images/new_hand_img.png);background-repeat:no-repeat;background-position:20% center;}
+.lis_01 dl dd{font-size:14px;font-family:"微软雅黑";display:block;text-align:center;line-height:32px;}
+.lis_01 dl dd a{color:black;width:100%;display:block;}
+.lis_01 dl dd:hover{background-color:#59370A;cursor:pointer;color:white;}
+.lis_01 dl dd a:hover{color:white;}
+/*了解互融城*/
+.lis_02{overflow:hidden;border-bottom:solid 2px #e5e5e5;}
+.lis_02 dl{width:100%;overflow:hidden;}
+.lis_02 dl dt{font-weight:bold;font-size:16px;font-family:"微软雅黑";display:block;text-align:center;line-height:42px;border-bottom:solid 2px #e5e5e5;background-image:url(../images/know.png);background-repeat:no-repeat;background-position:20% center;}
+.lis_02 dl dd{font-size:14px;font-family:"微软雅黑";display:block;text-align:center;line-height:32px;}
+.lis_02 dl dd a:hover{background-color:#59370A;cursor:pointer;color:white;}
+.lis_02 dl dd a{display:block;}
+/*互融城会员*/
+.lis_03{overflow:hidden;border-bottom:solid 2px #e5e5e5;}
+.lis_03 dl{width:100%;overflow:hidden;}
+.lis_03 dl dt{font-weight:bold;font-size:16px;font-family:"微软雅黑";display:block;text-align:center;line-height:42px;border-bottom:solid 2px #e5e5e5;background-image:url(../images/member.png);background-repeat:no-repeat;background-position:20% center;}
+.lis_03 dl dd{font-size:14px;font-family:"微软雅黑";display:block;text-align:center;line-height:32px;}
+.lis_03 dl dd a:hover{background-color:#59370A;cursor:pointer;color:white;}
+.lis_03 dl dd a{display:block;}
+/*我要借款*/
+.lis_04{overflow:hidden;border-bottom:solid 2px #e5e5e5;}
+.lis_04 dl{width:100%;overflow:hidden;}
+.lis_04 dl dt{font-weight:bold;font-size:16px;font-family:"微软雅黑";display:block;text-align:center;line-height:42px;border-bottom:solid 2px #e5e5e5;background-image:url(../images/loan.png);background-repeat:no-repeat;background-position:20% center;}
+.lis_04 dl dd{font-size:14px;font-family:"微软雅黑";display:block;text-align:center;line-height:32px;}
+.lis_04 dl dd a:hover{background-color:#59370A;cursor:pointer;color:white;}
+.lis_04 dl dd a{display:block;}
+/*短信通知*/
+.lis_05{overflow:hidden;}
+.lis_05 dl{width:100%;overflow:hidden;}
+.lis_05 dl dt{font-weight:bold;font-size:16px;font-family:"微软雅黑";display:block;text-align:center;line-height:42px;border-bottom:solid 2px #e5e5e5;background-image:url(../images/note.png);background-repeat:no-repeat;background-position:20% center;}
+.lis_05 dl dd{font-size:14px;font-family:"微软雅黑";display:block;text-align:center;line-height:32px;}
+.lis_05 dl dd a:hover{background-color:#59370A;cursor:pointer;color:white;}
+.lis_05 dl dd a{display:block;}
+
+
+/*右边*/
+.help_right{width:874px;overflow:Hidden;float:right;}
+/*帮助-right_top*/
+.help_right_top{width:100%;height:42px;line-height:42px;}
+.help_right_top_left{width:412px;height:42px;overflow:Hidden;float:left;border:solid 2px #e5e5e5;}
+.help_right_top_left img{float:left;margin-top:9px;margin-left:10px;}
+.help_right_top_left .first_ip{float:left;width:314px;height:42px;}
+.help_right_top_left .two_ip{width:60px;line-height:42px;float:right;}
+.help_right_top_left .two_ip:hover{cursor:pointer;}
+.help_right_top_right{width:444px;height:42px;line-height:42px;overflow:hidden;float:right;border:solid 2px #e5e5e5;position:relative;}
+.help_right_top_right img{float:left;margin-top:9px;margin-left:10px;}
+.help_right_top_right_center{width:340px;float:left;margin-left:10px;position:absolute;left:30px;top:0px;}
+.help_right_top_right_center a{line-height:42px;display:block;}
+.help_right_top_right a{font-size:12px;font-family:"微软雅黑";}
+.help_right_top_right a:hover{color:red;cursor:pointer;}
+/*帮助-right_center*/
+.help_right_center{width:870px;float:left;overflow:Hidden;margin-top:5px;padding-top:36px;border:solid 2px #e5e5e5;margin-bottom:5px;}
+/*center_top*/
+.help_right_center_top{width:804px;margin:0px auto;overflow:hidden;margin-bottom:32px;}
+.help_right_center_top_header{width:100%;line-height:38px;border-bottom:solid 1px #e5e5e5;}
+.help_right_center_top_header span{font-size:16px;font-weight:bold;font-family:'微软雅黑';padding:0 14px;padding-bottom:7px;border-bottom:solid 2px #ae7b42;}
+.help_right_center_top_header_main{width:100%;overflow:hidden;}
+.help_right_center_top_header_main_top{overflow:hidden;}
+.help_right_center_top_header_main_top .first_span{background-color:#59370a;}
+.help_right_center_top_header_main_top ul li{width:73px;float:left;text-align:center;margin-right:56px;margin-top:30px;cursor:pointer;}
+.help_right_center_top_header_main_top ul li a{color:white;font-weight:bold;font-size:14px;display:block;padding-top:30px;padding-bottom:40px;background-image:url(../images/new_hand_fp_img.png);background-repeat:no-repeat;background-position:center;}
+.help_right_center_top_header_main_top .first_a{color:black;font-weight:bold;font-size:14px;display:block;background:no-repeat url(../images/new_hand_fp_img_bg.png);background-position:center;}
+.help_right_center_top_header_main_top ul li a:hover{cursor:pointer;color:black;background-image:url(../images/new_hand_fp_img_bg.png);}
+.help_right_center_top_header_main_top ul li span{text-align:center;line-height:26px;display:block;width:26px;height:26px;border-radius:20px;background:#ff8c1c;margin-left:23px;margin-top:10px;color:white;font-family:'微软雅黑';}
+.help_right_center_top_header_main_bottom{width:100%;height:auto;padding:30px 0;padding-bottom:18px;background-color:#fbf8ee;border-radius:4px;position:relative;margin-top:22px;}
+.help_right_center_top_header_main_bottom_text{overflow:hidden;margin-left:50px;}
+.bottom_text_left{overflow:hidden;display:none;}
+.bottom_text_left .first_u{overflow:hidden;}
+.bottom_text_left ul li{width:100%;}
+.bottom_text_left ul li dl{overflow:hidden;}
+.bottom_text_left ul li dl dd{float:left;width:244px;}
+.bottom_text_left .first_u a:hover{cursor:pointer;color:red;}
+.bottom_text_left .bottom_text_left_u{float:left;margin-left:60px;}
+.help_right_center_top_header_main_bottom_text .first_more{float:right;margin-right:10px;font-size:12px;}
+.help_right_center_top_header_main_bottom_text .first_more:hover{cursor:pointer;color:Red;}
+.help_right_center_top_header_main_bottom_text ul li{line-height:30px;font-size:14px;font-family:"微软雅黑";}
+.help_right_center_top_header_main_bottom img{position:absolute;top:-20px;left:60px;}
+/*center_bottom*/
+.help_right_center_bottom{width:804px;margin:0px auto;overflow:hidden;}
+.help_right_center_bottom_header{width:100%;line-height:38px;border-bottom:solid 1px #e5e5e5;}
+.help_right_center_bottom_header span{font-size:16px;font-weight:bold;font-family:'微软雅黑';padding:0 14px;padding-bottom:7px;border-bottom:solid 2px #ae7b42;}
+.help_right_center_bottom_header_main{width:100%;overflow:hidden;margin-bottom:18px;}
+.help_right_center_bottom_header_main_top{overflow:hidden;}
+.help_right_center_bottom_header_main_top ul li{width:73px;float:left;text-align:center;margin-right:56px;margin-top:30px;}
+.help_right_center_bottom_header_main_top ul li a{color:white;font-size:14px;display:block;width:100%;padding-top:30px;padding-bottom:40px;background-image:url(../images/new_hand_fp_img.png);background-repeat:no-repeat;background-position:center;}
+.help_right_center_bottom_header_main_top ul li span{text-align:center;line-height:26px;display:block;width:26px;height:26px;border-radius:20px;background:#ff8c1c;margin-left:23px;margin-top:10px;color:white;font-family:'微软雅黑';}
+.help_right_center_bottom_header_main_top_01{width:100%;overflow:hidden;margin:16px 0px;}
+.help_right_center_bottom_header_main_top_01 .top_01_first{background-color:#59370a;color:white;}
+.help_right_center_bottom_header_main_top_01 ul li{float:left;font-size:14px;font-family:"微软雅黑";padding:10px 35px;background-color:#f3ddb7;border-radius:4px;}
+.help_right_center_bottom_header_main_top_01 ul li:hover{background-color:#59370a;color:white;cursor:pointer;}
+.help_right_center_bottom_header_main_bottom_text{overflow:hidden;margin-left:50px;}
+.bottom_text_left_01{overflow:Hidden;margin-top:10px;display:none;}
+.bottom_text_left_02{display:block;}
+.bottom_text_left_02 .first_u_01{overflow:Hidden;}
+.bottom_text_left_02 .first_u_01 li{width:100%;}
+.bottom_text_left_02 .first_u_01 li dl{overflow:Hidden;}
+.bottom_text_left_02 .first_u_01 li dl dd{float:left;width:244px;}
+.bottom_text_left_02 .first_u_01 li dl a:hover{cursor:pointer;color:red;}
+.help_right_center_bottom_header_main_bottom_text .two_more{float:right;margin-right:10px;font-size:12px;}
+.help_right_center_bottom_header_main_bottom_text .two_more:hover{cursor:pointer;color:Red;}
+.help_right_center_bottom_header_main_bottom_text ul li{line-height:30px;font-size:14px;font-family:"微软雅黑";}
+.help_right_center_bottom_header_main_bottom img{position:absolute;top:-20px;left:60px;}
+/*帮助-right_bottom*/
+.help_right_bottom{overflow:Hidden;border:solid 2px #e5e5e5;margin-bottom:10px;}
+.help_right_bottom_center{width:804px;margin:0px auto;overflow:hidden;}
+.help_right_bottom_center_top{width:100%;line-height:38px;border-bottom:solid 1px #e5e5e5;margin-bottom:20px;}
+.help_right_bottom_center_top span{font-size:16px;font-weight:bold;font-family:'微软雅黑';padding:0 14px;padding-bottom:7px;border-bottom:solid 2px #ae7b42;}
+.help_right_bottom_center_bottom{width:100%;overflow:hidden;margin-bottom:30px;}
+.help_right_bottom_center_bottom dl{overflow:hidden;width:66px;float:left;margin-right:81px;}
+.help_right_bottom_center_bottom dl dt{width:100%;overflow:Hiddn;cursor:pointer;}
+
+.help_right_bottom_center_bottom .icon_img_01{margin-left:6px;margin-top:11px;margin-bottom:8px;}
+.help_right_bottom_center_bottom .icon_img_02{margin-left:5px;margin-top:14px;margin-bottom:8px;}
+.help_right_bottom_center_bottom .icon_img_03{margin-left:11px;margin-top:5px;margin-bottom:8px;}
+.help_right_bottom_center_bottom .icon_img_04{margin-left:15px;margin-bottom:6px;}
+.help_right_bottom_center_bottom .icon_img_05{margin-left:13px;margin-top:4px;margin-bottom:6px;}
+.help_right_bottom_center_bottom .icon_img_06{margin-left:4px;margin-top:13px;margin-bottom:8px;}
+
+.help_right_bottom_center_bottom dl dd{width:100%;font-family:"微软雅黑";font-size:16px;text-align:center;cursor:pointer;}
+.help_right_bottom_center_bottom dl dd a:hover{color:Red;text-decoration:underline;}
+
+/*注册登录列表-right_bottom*/
+.login_right_bottom{clear:left;overflow:Hidden;border:solid 2px #e5e5e5;}
+.login_right_bottom_center{width:804px;margin:0px auto;overflow:hidden;}
+.login_right_bottom_center_top{width:100%;line-height:38px;border-bottom:solid 1px #e5e5e5;margin-bottom:10px;}
+.login_right_bottom_center ul{width:100%;overflow:hidden;}
+.login_right_bottom_center ul li{width:100%;display:block;line-height:36px;font-size:14px;border-bottom:dashed 1px #dcdcdc;}
+.login_right_bottom_center ul li a{color:black;}
+.login_right_bottom_center ul li a:hover{cursor:pointer;color:red;text-decoration:underline;}
+
+/*注册登录列表-详细页面-right_bottom*/
+.login_right_bottom_minute{clear:left;overflow:Hidden;border:solid 2px #e5e5e5;}
+.login_right_bottom_minute_center{width:804px;margin:0px auto;overflow:hidden;padding-top:30px;}
+.login_right_bottom_minute_center_top{width:100%;line-height:38px;border-bottom:solid 1px #e5e5e5;margin-bottom:10px;}
+.login_right_bottom_minute_center_top span{font-size:16px;font-weight:bold;font-family:'微软雅黑';padding-bottom:7px;border-bottom:solid 2px #ae7b42;}
+.login_right_bottom_minute_center_bottom{width:100%;overflow:Hidden;font-size:14px;font-family:"微软雅黑";padding-top:30px;}
+.login_right_bottom_minute_center_bottom span{display:block;widht:100%;height:126px;background:center no-repeat url(../image/login_right_bottom_minute_center_bottom_img.png);padding-top:30px;}
+.login_right_bottom_minute_center_bottom a{margin:0 12px;}
+.login_right_bottom_minute_center_bottom img{margin-bottom:42px;}

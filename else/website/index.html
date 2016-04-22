@@ -1,0 +1,704 @@
+<!doctype html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="jquery.js"></script>
+<meta charset="utf-8">
+<title>首页</title>
+</head>
+<body>
+<!--上-->
+<div class="top">
+<!--头部-->
+	<div class="header">
+<!--header_left-->
+    	<div class="header_left"><img src="image/logo.png"></div>
+<!--header_center-->
+        <div class="header_center">
+        <!--center_left-->
+        	<div class="header_center_left">
+            <!--center_left_left-->
+            	<div class="header_center_left_left">
+                	<img src="image/search_icon.png">
+                    <input type="text" onfocus="if (value =='搜索图片/案例/用户'){value =''}" onblur="if (value ==''){value='搜索图片/案例/用户'}" placeholder="搜索图片/案例/用户" style="width:320px;border:none;color:#AFAEAE;margin-left:4px;">
+                </div>
+            <!--center_left_right-->
+                <div class="header_center_left_right">
+                	<img style="margin:0 10px;" src="image/search_icon_center.png">
+                    <a class="selected">图片</a>
+                    <img style="margin-top:6px;" src="image/search_icon_bottom.png">
+                   <div class="tp_xl">
+                        <a>图片</a>
+                        <a>案例</a>
+                        <a>装修</a>
+                        <a>用户</a>
+                    </div>
+                </div>
+<script>
+$(".tp_xl").hide();
+$(".header_center_left_right").mouseenter(function(){
+	$(".tp_xl").show();	
+});
+$(".header_center_left_right").mouseleave(function(){
+	$(".tp_xl").hide();	
+});
+$(".tp_xl").mouseleave(function(){
+	$(".tp_xl").hide();	
+});
+$(".tp_xl a").click(function(){
+	$(".selected").html($(this).html());
+});
+</script>
+                </div>
+        <!--center_right-->
+            <div class="header_center_right">
+            	<a>搜索</a>
+            </div>
+        </div>
+<!--header_right-->
+        <div class="header_right">
+        	<ul><img src="image/header_right_icon_01.png">
+            	<li title="收藏首页">收藏首页</li>
+                <span class="header_right_v_bar">|</span>
+                <img src="image/header_right_icon_02.png">
+                <li title="微博登陆">微博登录</li>
+                <span class="header_right_v_bar">|</span>
+                <li title="登录">登录</li>
+                <span class="header_right_v_bar">|</span>
+                <li title="注册">注册</li>
+            </ul>
+        </div>
+    </div>
+<!--导航-->
+    <div class="nav">
+    	<div class="nav_center">
+        	<ul>
+            	<li style="background-image:url(image/nav_center_li_bg.png);background-repeat:repeat-x;">网站首页</li>
+                <li>关于我们</li>
+                <li>装修案例</li>
+                <li>寻找专家</li>
+                <li>新闻中心</li>
+                <li>联系我们</li>
+            </ul>
+            <span class="nav_center_right" title="免费申请设计">
+            <img src="image/nav_center_right_icon_bg.png">免费申请设计
+            <div style="width:120px;height:30px;background-image:url(image/nav_center_triangle.png);background-repeat:no-repeat;background-position:center top;position:absolute;right:0px;bottom:-30px;z-index:30;"></div>
+            </span>
+<!--广告浮动左边导航-->
+            <div class="nav_center_left">
+            	<dl>
+                	<dt><img src="image/space_bg.png">空间</dt>
+                    <dd class="nav_center_left_er">
+                    	<a title="客厅">客厅</a>
+                        <a title="卧室">卧室</a>
+                        <a title="卫生间">卫生间</a>
+                        <a title="厨房">厨房</a>
+                        <a title="电视背景墙">电视背景墙</a>
+                        <a title="吊顶">吊顶</a>
+                        <a title="儿童房">儿童房</a>
+                        <a title="阳台">阳台</a>
+                        <a title="餐厅">餐厅</a>
+                    </dd>
+                    
+                    <dt><img src="image/color_bg.png">风格</dt>
+                    <dd class="nav_center_left_er">
+                    	<a title="简约">简约</a>
+                        <a title="欧式">欧式</a>
+                        <a title="现代风格">现代风格</a>
+                        <a title="温馨地中海">温馨地中海</a>
+                        <a title="美式经典">美式经典</a>
+                        <a title="中式写意">中式写意</a>
+                        <a title="韩式">韩式</a>
+                        <a title="法式">法式</a>
+                        <a title="新古典">新古典</a>
+                    </dd>
+                    
+                    <dt><img src="image/ht_bg.png">户型</dt>
+                    <dd class="nav_center_left_er">
+                    	<a title="小户型">小户型</a>
+                        <a title="二居">二居</a>
+                        <a title="三居">三居</a>
+                        <a title="70㎡">70㎡</a>
+                        <a title="80㎡">80㎡</a>
+                        <a title="90㎡">90㎡</a>
+                        <a title="100㎡以上">100㎡以上</a>
+                        <a title="复试">复试</a>
+                        <a title="别墅">别墅</a>
+                    </dd>
+                </dl>
+            </div>
+            
+        </div>
+    </div>
+<!--导航1-->
+    <div id="nav_01">
+    	<div class="nav_01_center">
+        	<ul>
+            	<li style="background-image:url(image/nav_center_li_bg.png);background-repeat:repeat-x;">网站首页</li>
+                <li>关于我们</li>
+                <li>装修案例</li>
+                <li>寻找专家</li>
+                <li>新闻中心</li>
+                <li>联系我们</li>
+            </ul>
+            <span class="nav_center_right" title="免费申请设计">
+            <img src="image/nav_center_right_icon_bg.png">免费申请设计
+            <div style="width:120px;height:30px;background-image:url(image/nav_center_triangle.png);background-repeat:no-repeat;background-position:center top;position:absolute;right:0px;bottom:-30px;"></div>
+            </span>
+        </div>
+    </div>
+<script>
+window.onscroll = function(){ 
+    var t = document.documentElement.scrollTop || document.body.scrollTop;  
+    var top_div = document.getElementById( "nav_01" ); 
+    if( t >= 100 ) { 
+        top_div.style.display = "inline"; 
+    } else { 
+        top_div.style.display = "none"; 
+    } 
+} 
+</script>
+<!--广告-->
+    <div class="banner">
+        <div class="banner_center">
+        	<img title="banenr01" src="image/banner_01.png">
+            <img title="banenr02" src="image/banner_02.png">
+            <img title="banenr03" src="image/banner_03.png">
+        </div>
+    </div>
+</div>
+<script>
+function time(){
+	$(".banner_center").animate({left:-1583},1000,
+function(){
+	$(".banner_center").css({left:0});
+	$(".banner_center img:first").insertAfter(".banner_center img:last")		
+});	
+
+}
+var times=setInterval(time,2000);
+$(".banner").mouseover(function(){
+	clearInterval(times);	
+});
+$(".banner").mouseout(function(){
+	times=setInterval(time,2000);	
+})
+</script>
+<!--下-->
+<div class="bottom">
+<!--内容-->
+    <div class="main">
+<!--关于我们-->
+			<div class="about_us_top"><a>关于我们</a></div>
+        <div class="about_us">
+        	
+            <div class="about_us_bottom">
+            	<div class="about_us_bottom_top">
+                	<img title="服务好" src="image/about-us_img_01.png">
+                    <img title="质量好" style="margin:0 11px;" src="image/about-us_img_02.png">
+                    <img title="信誉高" src="image/about-us_img_03.png">
+                </div>
+<script>
+
+</script>
+                <div class="about_us_bottom_bottom">
+                	<div class="about_us_bottom_bottom_left">
+                    	<a><span style="margin:0 10px;">&nbsp;</span>“居佳祥和装饰” 创建于 2004年，在中国家居产业已形成规模化、专业化、品牌化、集团化的绝对领先优势 。 居佳祥和装饰公司以作今日名牌，创百年企业为宗旨， 以居佳祥和品牌为平台， 以家居产业链为主线，立足在中高端家居装饰设计与施工、材料和家具及配饰供应、房地产楼盘精装修设计、全国性特许经营品牌发展、行业专业研究分析等多个方向，对相关产业领域进行深度家居集成和资源优化整合，构建起中国最具竞争力的装饰产业和品牌梯队，形成齐发并举的战略体系和格局。
+设计源于人，居佳祥和装饰从成立伊始，就非常注重“以人为本”，注重寻求自然环境与人文环境相融的和谐、空间设计与生活风水的整体协调，以体现设计如其人的个性品味空间。同时，居佳祥和装饰还提出了精品组合的设计新概念，即尊重每一位业主，随时跟进业主所需，倾听业主的声音，以创新的服务意识推动产品，将业主对家的概念与对生活空间的设计想象相结合，将业主的需求与设计师自身的设计风格相结合，不断推陈出新，使得家不但是个可以居住的空间，而且是个可以包容亲情、释放温馨、修身养性以及凸显个性的地方。<span class="more_01" title="了解更多">了解更多>></span></a>
+                    </div>
+                    <div class="about_us_bottom_bottom_right">
+                    	<img src="image/about-us_right_bg.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--内容1-->
+        <div class="main_01">
+<!--main_01左-->
+        	<div class="main_01_left">
+            	<div class="main_01_left_top">
+                	<span class="case">装修案例</span>
+                        <span style="float:right;font-size:16px;font-family:'微软雅黑';font-style:italic;color:gray;">
+                            <strong style="color:red;">10000</strong>
+                            份装修案例 <span style="font-size:12px;">还原装修全过程</span>
+                            <a style="font-family:'宋体';margin-left:10px;font-style:normal;font-size:12px;color:red;">更多>></a>
+                        </span>
+                </div>
+                <div class="main_01_left_bottom">
+                 <div class="main_01_left_bottom_center">
+					<div class="main_01_left_bottom_center_top">
+                    	<span style="padding-right:10px;padding-left:10px;color:#F58E15;background-image:url(image/main_01_left_bottom_center_top_img_bg.png);background-repeat:no-repeat;background-position:right center;">户型</span>
+                        <a>一居</a>
+                        <a>一居</a>
+                        <a>一居</a>
+                        <a>一居</a>
+                        <a>一居</a>
+                    </div>
+                    <div class="main_01_left_bottom_center_bottom">
+                    	<div class="main_01_left_bottom_center_bottom_top">
+                        	<img src="image/main_01_left_bottom_center_bottom_top_img.png">
+                            <img style="float:right;" src="image/main_01_left_bottom_center_bottom_top_img.png">
+                        </div>
+                    </div>
+                    <div class="main_01_left_bottom_center_bottom">
+                    	<div class="main_01_left_bottom_center_bottom_top">
+                        	<img src="image/main_01_left_bottom_center_bottom_top_img.png">
+                            <img style="float:right;" src="image/main_01_left_bottom_center_bottom_top_img.png">
+                        </div>
+                    </div>
+                 </div>
+                </div>
+            </div>
+<!--main_01右--> 		
+            <div class="main_01_right">
+            	<div class="main_01_right_top"><a>国外案例</a></div>
+                <div class="main_01_right_bottom">
+                	<div class="main_01_right_bottom_01">
+                    	<img src="image/main_01_right_bottom_img_01.png">
+                        <a>时尚个性，空间完美利用人气(18258 )</a>
+                    </div>
+                    <div class="main_01_right_bottom_01" style="margin:20px 26px;">
+                    	<img src="image/main_01_right_bottom_img_01.png">
+                        <a>时尚个性，空间完美利用人气(18258 )</a>
+                    </div>
+                    <div class="main_01_right_bottom_01">
+                    	<img src="image/main_01_right_bottom_img_01.png">
+                        <a>时尚个性，空间完美利用人气(18258 )</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--内容2-->   
+		<div class="main_02">
+<!--main_02左-->
+        	<div class="main_02_left">
+            	<div class="main_02_left_top">
+                	<span class="case">装修效果图</span>
+                        <span style="float:right;font-size:16px;font-family:'微软雅黑';font-style:italic;color:gray;">
+                            <strong style="color:red;">10000</strong>
+                            张家具美图 <span style="font-size:12px;">随处可见的灵感</span>
+                            <a style="font-family:'宋体';margin-left:10px;font-style:normal;font-size:12px;color:red;">更多>></a>
+                        </span>
+                </div>
+                <div class="main_02_left_bottom">
+                 <div class="main_02_left_bottom_center">
+                	<div class="main_02_left_bottom_center_top">
+                    	<span style="padding-right:10px;padding-left:10px;color:#F58E15;background-image:url(image/main_01_left_bottom_center_top_img_bg.png);background-repeat:no-repeat;background-position:right center;">空间</span>
+                        <a>客厅</a>
+                        <a>卧室</a>
+                        <a>卫生间</a>
+                        <a>餐厅</a>
+                        <a>儿童房</a>
+                        <a>阳台</a>
+                        <a>厨房</a>
+                        <a>玄关</a>
+                    </div>
+                    <div class="main_02_left_bottom_center_bottom">
+                    	<div class="main_02_left_bottom_center_bottom_left">
+                        	<img src="image/main_02_left_bottom_center_bottom_left_img.png">
+                        </div>
+                        <div class="main_02_left_bottom_center_bottom_right">
+                        	<img src="image/main_02_left_bottom_center_bottom_right_img_01.png">
+                            <img style="margin-top:10px;" src="image/main_02_left_bottom_center_bottom_right_img_01.png">
+                        </div>
+                    </div>
+                 </div>
+                </div>
+            </div>
+<!--main_02右--> 		
+            <div class="main_02_right">
+            	<div class="main_02_right_top"><a>潮流设计</a></div>
+                <div class="main_02_right_bottom">
+                	<div class="main_02_right_bottom_01">
+                    	<img src="image/main_01_right_bottom_img_01.png">
+                        <a>时尚个性，空间完美利用人气(18258 )</a>
+                    </div>
+                    <div class="main_02_right_bottom_01" style="margin:20px 26px;">
+                    	<img src="image/main_01_right_bottom_img_01.png">
+                        <a>时尚个性，空间完美利用人气(18258 )</a>
+                    </div>
+                    <div class="main_02_right_bottom_01">
+                    	<img src="image/main_01_right_bottom_img_01.png">
+                        <a>时尚个性，空间完美利用人气(18258 )</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+<!--内容4--> 
+        <div class="main_04">
+<!--内容4左-->
+        	<div class="main_04_left">
+            	<div class="main_04_left_top">
+					<a>装修过程</a>
+                </div>
+                <div class="main_04_left_bottom">
+                	<div class="main_04_left_bottom_center">
+                    	<div class="main_04_left_bottom_center_top">
+                        	<div class="main_04_left_bottom_center_top_left">
+                            	<a>装修准备</a>
+                                <span style="color:#999;margin:0 10px;">|</span>
+                                <a>装修进行时</a>
+                                <span style="color:#999;margin:0 10px;">|</span>
+                                <a>入住阶段</a>
+                            </div>
+                            <div class="main_04_left_bottom_center_top_right">
+                            	<a>更多>></a>
+                            </div>
+                        </div>
+                        <div class="main_04_left_bottom_center_bottom">
+                        	<div class="main_04_left_bottom_center_bottom_left">
+                            	<img src="image/main_04_left_bottom_center_bottom_img_01.png">
+                            </div>
+                            <div class="main_04_left_bottom_center_bottom_right">
+                            	<div class="main_04_left_bottom_center_bottom_right_top">
+                                    <h4>【招财童子】 安装招财童子如何摆放</h4>
+                                    <p>
+                                    招财童子四个字相信大家都不陌生，那么你知道他们的由来么。下面美乐乐小编就给大家介绍招财童子的由来，如何供奉摆放招财童子。和其中的一些注意事项，...<a style="color:#e53434" class="more">查看更多>></a>
+                                    </p>
+                                </div>
+                                <div class="main_04_left_bottom_center_bottom_right_bottom">
+                                <ul>
+                                  <li><span class="left" style="color:#e53434;">注意事项</span><a style="color:#cdcdcd;margin:0 10px;">|</a><span class="right">高压变频器维修知识学习</span></li>
+                                  <li><span class="left" style="color:#e53434;">客厅风水</span><a style="color:#cdcdcd;margin:0 10px;">|</a><span class="right">住宅风水宜忌【方位篇】</span></li>
+                                  <li><span class="left" style="color:#e53434;">客厅风水</span><a style="color:#cdcdcd;margin:0 10px;">|</a><span class="right">财神爷的摆放位置 财神爷摆放注意事项</span></li>
+                                  <li><span class="left" style="color:#e53434;">书房风水</span><a style="color:#cdcdcd;margin:0 10px;">|</a><span class="right">书桌风水之正确摆放位置</span></li>
+                                  <li><span class="left" style="color:#e53434;">客厅风水</span><a style="color:#cdcdcd;margin:0 10px;">|</a><span class="right">关公像在家摆放位置有什么讲究</span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--内容4右-->
+            <div class="main_04_right">
+            	<div class="main_04_right_top">
+                	<a>装修工具</a>
+                </div>
+                <div class="main_04_right_bottom">
+                <!--bottom_center-->
+                    <div class="main_04_right_bottom_center">
+                    <!--img_01-->
+                    	<div class="main_04_right_bottom_center_img_01">
+                         	<div class="main_04_right_bottom_center_img_01_top">
+                        		<img src="image/main_04_right_bottom_center_icon_01.png">
+                         	</div>
+                         	<div class="main_04_right_bottom_center_img_01_bottom">
+                         		<a>涂料计数器</a>
+                         	</div>
+                        </div>
+                    <!--img_01-->
+                        <div class="main_04_right_bottom_center_img_01" style="margin:0 18px;">
+                         	<div class="main_04_right_bottom_center_img_01_top">
+                        		<img src="image/main_04_right_bottom_center_icon_02.png">
+                         	</div>
+                         	<div class="main_04_right_bottom_center_img_01_bottom">
+                         		<a>地板计数器</a>
+                         	</div>
+                        </div>
+                    <!--img_01-->
+                        <div class="main_04_right_bottom_center_img_01" style="float:right;">
+                         	<div class="main_04_right_bottom_center_img_01_top">
+                        		<img src="image/main_04_right_bottom_center_icon_03.png">
+                         	</div>
+                         	<div class="main_04_right_bottom_center_img_01_bottom">
+                         		<a>壁纸计数器</a>
+                         	</div>
+                        </div>
+                    </div>
+                <!--bottom_center-->
+                    <div class="main_04_right_bottom_center">
+                    <!--img_01-->
+                    	<div class="main_04_right_bottom_center_img_01">
+                         	<div class="main_04_right_bottom_center_img_01_top">
+                        		<img src="image/main_04_right_bottom_center_icon_04.png">
+                         	</div>
+                         	<div class="main_04_right_bottom_center_img_01_bottom">
+                         		<a>墙砖计数器</a>
+                         	</div>
+                        </div>
+                    <!--img_01-->
+                        <div class="main_04_right_bottom_center_img_01" style="margin:0 18px;">
+                         	<div class="main_04_right_bottom_center_img_01_top">
+                        		<img src="image/main_04_right_bottom_center_icon_05.png">
+                         	</div>
+                         	<div class="main_04_right_bottom_center_img_01_bottom">
+                         		<a>窗帘计数器</a>
+                         	</div>
+                        </div>
+                    <!--img_01-->
+                        <div class="main_04_right_bottom_center_img_01" style="float:right;">
+                         	<div class="main_04_right_bottom_center_img_01_top">
+                        		<img src="image/main_04_right_bottom_center_icon_06.png">
+                         	</div>
+                         	<div class="main_04_right_bottom_center_img_01_bottom">
+                         		<a>地砖计数器</a>
+                         	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--内容5--> 
+        <div class="main_05">
+        <!--main_05_01-->
+        	<div class="main_05_01">
+            	<div class="main_05_01_top">
+                	<div class="main_05_01_top_text"><a>装修知识<span style="font-weight:normal;font-size:14px;color:#a39999;margin-left:4px;">Sdecoration Knowledge</span></a></div>
+                    <div class="main_05_01_top_icon">&gt;&gt;</div>
+                </div>
+                <div class="main_05_01_bottom">
+					<dl>
+                    	<dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[06-02]</span>
+                        	<a>想拥有华丽客厅，水晶灯的日常清洁不可少</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[06-02]</span>
+                        	<a>装修中油漆出现“回黏”现象的解决办法</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-15]</span>
+                        	<a>居佳祥和之家居盆栽植物的摆放大有讲究</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-15]</span>
+                        	<a>居佳祥和之夏季办公室家具防潮最新攻略</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-11]</span>
+                        	<a>家装中不可擅自改动的四个地方</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-11]</span>
+                        	<a>装修设计中常犯的几大错误</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-07]</span>
+                        	<a>注意四个环保细节，打造健康生态装修</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-07]</span>
+                        	<a>别墅装修中电路布线的小技巧</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-01]</span>
+                        	<a>居佳祥和教你三招鉴别承重墙与非承重墙</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[04-30]</span>
+                        	<a>卫浴和间洁具的类型及选购窍门</a>
+                        </dt>
+                    </dl>
+                </div>
+            </div>
+            <!--main_05_01-->
+        	<div class="main_05_01" style="margin:0 25px;">
+            	<div class="main_05_01_top">
+                	<div class="main_05_01_top_text"><a>新闻中心<span style="font-weight:normal;font-size:14px;color:#a39999;margin-left:4px;">News center</span></a></div>
+                    <div class="main_05_01_top_icon">&gt;&gt;</div>
+                </div>
+                <div class="main_05_01_bottom">
+					<dl>
+                    	<dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[06-02]</span>
+                        	<a>展现未来科技——零碳馆2.0</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[06-02]</span>
+                        	<a>昌平装修公司谈飘窗护栏的安装方法</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-15]</span>
+                        	<a>别墅装修的家居色彩搭配建议</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-15]</span>
+                        	<a>取材天然的东南亚风格家居特点介绍</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-11]</span>
+                        	<a>居佳祥和教你区别毛坯房、简装房和精装修</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-11]</span>
+                        	<a>居佳祥和之踢脚线的作用及详细介绍指南</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-07]</span>
+                        	<a>居佳祥和教您选购藤木家具的小技巧</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-07]</span>
+                        	<a>住新房出现恶心、头晕是室内装修污染所致</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-01]</span>
+                        	<a>新型的背景墙材料，总有一款适合你的别墅</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[04-30]</span>
+                        	<a>进口壁纸国内外市场差价高达10倍</a>
+                        </dt>
+                    </dl>
+                </div>
+            </div>
+            <!--main_05_01-->
+        	<div class="main_05_01" style="float:right;">
+            	<div class="main_05_01_top">
+                	<div class="main_05_01_top_text"><a>联系我们<span style="font-weight:normal;font-size:14px;color:#a39999;margin-left:4px;">Contact us</span></a></div>
+                    <div class="main_05_01_top_icon">&gt;&gt;</div>
+                </div>
+                <div class="main_05_01_bottom">
+					<dl>
+                    	<dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[06-02]</span>
+                        	<a>想拥有华丽客厅，水晶灯的日常清洁不可少</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[06-02]</span>
+                        	<a>装修中油漆出现“回黏”现象的解决办法</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-15]</span>
+                        	<a>居佳祥和之家居盆栽植物的摆放大有讲究</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-15]</span>
+                        	<a>居佳祥和之夏季办公室家具防潮最新攻略</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-11]</span>
+                        	<a>家装中不可擅自改动的四个地方</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-11]</span>
+                        	<a>装修设计中常犯的几大错误</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-07]</span>
+                        	<a>注意四个环保细节，打造健康生态装修</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-07]</span>
+                        	<a>别墅装修中电路布线的小技巧</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[05-01]</span>
+                        	<a>居佳祥和教你三招鉴别承重墙与非承重墙</a>
+                        </dt>
+                        <dt>
+                        	<span style="margin-right:10px;font-size:12px;font-family:'微软雅黑';color:#bbbbbb;">[04-30]</span>
+                        	<a>卫浴和间洁具的类型及选购窍门</a>
+                        </dt>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页脚-->
+    <div class="foot">
+    <div class="foot_center">
+    <!--页脚上-->
+    	<div class="foot_top">
+        <!--页脚top左-->
+        	<div class="foot_top_left">
+            <!--网站地图-->
+            	<div class="foot_top_left_01">
+                	<ul>
+                    	<span class="foot_top_left_01_first">网站地图</span>
+                        <li>装修效果图</li>
+                        <li>装修案例</li>
+                        <li>装修公司</li>
+                        <li>装修吧</li>
+                    </ul>
+                </div>
+             <!--关于我们-->
+                <div class="foot_top_left_01">
+                	<ul>
+                    	<span class="foot_top_left_01_first">关于我们</span>
+                        <li>关于我们</li>
+                        <li>联系我们</li>
+                        <li>投诉建议</li>
+                    </ul>
+                </div>
+              <!--本站服务-->
+                <div class="foot_top_left_01">
+                	<ul>
+                    	<span class="foot_top_left_01_first">本站服务</span>
+                        <li>免费量房报价</li>
+                        <li>装修监理</li>
+                        <li>装修计算器</li>
+                    </ul>
+                </div>
+            </div>
+        <!--页脚top右-->
+            <div class="foot_top_right">
+            	<div class="foot_top_right_top">
+                	<img src="image/logo.png">
+                </div>
+                <div class="foot_top_right_bottom">
+                	<p>客服热线</p>
+                    <p style="font-size:18px;color:white;">400-1802822</p>
+                </div>
+            </div>
+        </div>
+<!--页脚中-->
+        <div class="foot_among">
+        	<span style="color:#737373;font-size:12px;font-family:'宋体';">友情链接：</span>
+            <a>中商情报网</a>
+            <a>亲宝网</a>
+            <a>婚纱摄影</a>
+            <a>湖北招考网</a>
+            <a>AS战长网</a>
+            <a>旅游地产</a>
+            <a>中国采招网络</a>
+            <a>编织人生</a>
+            <a>太极拳</a>
+            <a>太行军事网</a>
+            <a>万家热线</a>
+            <a>西路军事</a>
+            <a>我爱我家</a>
+            <a>搜了网</a>
+            <a>中国鲜花</a>
+            <a>礼品网</a>
+            <a>钻石小鸟</a>
+            <a>汽车江湖网</a>
+            <a>火车票</a>
+            <a>招聘网</a>
+            <a>宝宝吧</a>
+            <a>科技新闻</a>
+            <a>邮编查询</a>
+            <a>装修网</a>
+            <a>九游网</a>
+            <a>考研</a>
+            <a>贝瓦网</a>
+            <a>百事网</a>
+            <a>太平洋居网</a>
+            <a>北京神舟国旅</a>
+            <a>空军之翼</a>
+            <a>上海金属网</a>
+            <a>桌面壁纸</a>
+            <a>纳金网</a>
+        </div>
+<!--页脚下-->
+        <div class="foot_bottom">
+        	<a>装修效果图</a>
+            <span class="foot_bottom_v_bar">|</span>
+            <a>装修案例</a>
+            <span class="foot_bottom_v_bar">|</span>
+            <a>装修公司</a>
+            <span class="foot_bottom_v_bar">|</span>
+            <a>快来装修</a>
+            <span class="foot_bottom_v_bar">|</span>
+            <a>新闻中心</a>
+            <span class="foot_bottom_v_bar">|</span>
+            <a>装修问答</a><br>
+            <span class="foot_bottom_text_01">© 2005-2014 乐家居 版权所有，并保留所有权利。</span><br>
+            <span class="foot_bottom_text_02">ICP备案证书号：粤ICP备14025797号-2</span>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

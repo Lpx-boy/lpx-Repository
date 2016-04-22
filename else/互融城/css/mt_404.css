@@ -1,0 +1,9 @@
+.mt_404_header{width:100%;height:54px;overflow:hidden;background:repeat-x url(../images/invest_header_span_bg.png);}
+.mt_404{width:auto;height:auto;overflow:hidden;padding:20px 0 0 0;margin:0 auto;}
+.mt_404_c{width:604px;height:512px;margin:0 auto;background:center no-repeat url(../images/404.png);position:relative;}
+.mt_404_c_m{overflow:hidden;width:336px;height:auto;position:absolute;top:186px;right:0px;}
+.mt_p_1{width:100%;font-size:14px;line-height:24px;}
+.mt_p_2{width:100%;font-size:16px;overflow:hidden;margin-top:10px;}
+.mt_p_2 a{float:left;color:white;display:block;background:left center no-repeat url(../images/mt_p_2_a_icon.png);padding-left:14px;text-shadow:1px 1px 1px black;}
+.mt_p_2 a:hover{color:#27b891;cursor:pointer;text-shadow:1px 1px 1px rgba(39,184,145,0.8);}
+.first_a{margin-left:30px;}
